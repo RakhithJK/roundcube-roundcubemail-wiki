@@ -14,4 +14,4 @@ The help documents are available in the following languages:
  * [Slovenčina](http://docs.roundcube.net/doc/help/1.0/sk_SK)  (v1.0)
 
 
-> Note: the documentation is not complete yet! Contributions are much appreciated.'''
+> Note: the documentation is not complete yet! Contributions are much appreciated.
