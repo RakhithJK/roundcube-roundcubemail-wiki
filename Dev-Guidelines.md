@@ -4,7 +4,7 @@ Here are a few rules and explanations that should make it easier for new contrib
 
 ## Available Documentation
 
-The code is not very well documented but using the PHPDoc comments we finally made it to create a class and functions overview. More details can be found at the [Roundcube Documentation](Dev:-Docs) page.
+The code is not very well documented but using the PHPDoc comments we finally made it to create a class and functions overview. More details can be found at the [Roundcube Documentation](Dev-Docs) page.
 
 ## Naming conventions
 
