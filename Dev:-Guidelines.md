@@ -12,17 +12,17 @@ The code is not very well documented but using the PHPDoc comments we finally ma
 
 In general all files should have the appropriate extension such as .php, .js, etc. For PHP include files that are not meant to be executed directly please use the extension _.inc_. This prevents them from being executed directly in case that the access restrictions do not work as intended.
 
-All files should be named with lower case letters and __underlines__ (for word separation).
+All files should be named with lower case letters and _underlines_ (for word separation).
 
 Because RoundCube uses PHP autoloading technology, classes need to be saved in a file named _class_name.php_ within `program/include/` to be included on demand.
 
 ### Classes, functions and variables
 
-All class, function and variable names should only contain _lower case_ letters and numbers and use __underlines__ for word separation. No [CamelCase](http://en.wikipedia.org/wiki/CamelCase) please.
+All class, function and variable names should only contain _lower case_ letters and numbers and use _underlines_ for word separation. No [CamelCase](http://en.wikipedia.org/wiki/CamelCase) please.
 
-Functions providing Roundcube specific functionality should start with either _rcmail_ (webmail specific functions) or _rcube_ (global/framework functions).
+Functions providing Roundcube specific functionality should start with either `rcmail` (webmail specific functions) or `rcube` (global/framework functions).
 
-Class names should start with _rcube_.
+Class names should start with `rcube`.
 
 
 ## Code style
