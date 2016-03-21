@@ -1,6 +1,6 @@
 # Plugin Resources
 
-_Also see [Plugin Hooks](Plugin_Hooks), [Javascript API](Javascript_API), [Plugin Events](Plugin_Events) and [Plugin Repository](Plugin_Repository)_
+_Also see [[Plugin Hooks]], [[Javascript API]], [[Plugin Events]] and [[Plugin Repository]]_
 
 Plugins extend the functionality of Roundcube.
 They are not part of the core application but can be installed and activated individually.
@@ -25,7 +25,7 @@ The official plugin repository lists plugins written by community members and th
 
 #### Old Community Plugins List
 
-Some older plugins didn't make it to the repository but are listed on our legacy [Plugin Repository](Plugin_Repository) page.
+Some older plugins didn't make it to the repository but are listed on our legacy [[Plugin Repository]] page.
 
 
 ## How to Write a Plugin
@@ -291,7 +291,7 @@ Finally, register at Transifex.com and read [the documentation](http://help.tran
 
 ## Publishing Plugins
 
-We strongly encourage plugin developers to maintain the code in a git or svn repository, best done by creating separate repositories for every single plugin. There are many platforms which offer such repositories for free (e.g. [github](http://github.com), [gitorious](http://gitorious.org) or [sourceforge](http://sourceforge.net)).
+We strongly encourage plugin developers to maintain the code in a git or svn repository, best done by creating separate repositories for every single plugin. There are many platforms which offer such repositories for free (e.g. [Github](http://github.com), [Gitorious](http://gitorious.org) or [Sourceforge](http://sourceforge.net)).
 
 ### Plugin Repository
 
