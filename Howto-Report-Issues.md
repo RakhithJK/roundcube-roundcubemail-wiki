@@ -1,8 +1,8 @@
 ## How to report issues?
 
-So you think you found an issue, huh? - First off, we really appreciate all feedback we get. To handle all the traffic, we ask you to setup a ticket on our trac (you are already on it, reading this) and take into account all of the following when you're creating it.  _You'll need to register for an account before you'll be able to create new tickets._
+So you think you found an issue, huh? - First off, we really appreciate all feedback we get. To handle all the traffic, we ask you to file an [issue](/roundcube/roundcubemail/issues) - _after researching whether a ticket about your problem already exists_ - and take into account all of the following when you're creating it.  You'll need to register for a Github account before you'll be able to create new tickets.
 
-*I know this is probably a pain to read, but please do it so we can straighten out all issues sooner than later.*
+***We know this is probably a pain to read, but please do it so we can straighten out all issues sooner than later.***
 
 ### Most current version
 
