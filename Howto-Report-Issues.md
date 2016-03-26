@@ -1,6 +1,6 @@
 ## How to report issues?
 
-So you think you found an issue, huh? - First off, we really appreciate all feedback we get. To handle all the traffic, we ask you to file an [issue](/roundcube/roundcubemail/issues) - _after researching whether a ticket about your problem already exists_ - and take into account all of the following when you're creating it.  You'll need to register for a Github account before you'll be able to create new tickets.
+So you think you found an issue? - First off, we really appreciate all feedback we get. To handle all the traffic, we ask you to file an [issue](/roundcube/roundcubemail/issues) - _after researching whether a ticket about your problem already exists_ - and take into account all of the following when you're creating it.  You'll need to register for a Github account before you'll be able to create new tickets.
 
 ***We know this is probably a pain to read, but please do it so we can straighten out all issues sooner than later.***
 
@@ -13,8 +13,9 @@ Please understand that Roundcube is a very young project. So because development
  * What's your PHP version? (Please make sure this is up to date!)
  * What's your mail server? (Please make sure this is up to date!)
  * What browser/operating system did you use, any special settings/plugins?
- * What did the logs say? (*see below*, How to use the logs?)
- * Is the behavior reproducible? (*see below*, Samples)
+ * What did the logs say? (*see below*, [How to use the logs?](#how-to-use-the-logs))
+ * Is the behavior reproducible? (*see below*, [Samples](#samples))
+ * Does the problem persist with all plugins disabled?
 
 ### Keeping your system up to date
 
