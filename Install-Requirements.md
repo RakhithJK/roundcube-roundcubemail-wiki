@@ -13,7 +13,6 @@
     * Session support
     * Socket support
     * PHP Data Objects (PDO) with driver for either MySQL, PostgreSQL or SQLite (required)  
-      _Note: MySQL database driver requires PHP 5.3 or newer_
     * iconv (recommended)
     * OpenSSL (recommended)
     * Mbstring (optional)
@@ -41,9 +40,7 @@
     * magic_quotes_runtime disabled
     * magic_quotes_sybase disabled
  * If using MySQL or PostgreSQL, a database server and database user with permission to create tables
-    * If using MySQL 5.0.2 or later, disable STRICT_TRANS_TABLES and STRICT_ALL_TABLES
  * OpenSSL and Socket modules for PHP required to connect to secure IMAP or IMAPS, for secure SMTP and to use the spell checker
-    * Additionally, the CURL module for PHP is required for spell checking with TinyMCE (HTML WYSIWYG Editor).
  * An IMAP server which supports IMAP 4 rev 1
  * An SMTP server (recommended) or PHP configured for mail delivery
 
