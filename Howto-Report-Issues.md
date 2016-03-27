@@ -6,7 +6,7 @@ So you think you found an issue? - First off, we really appreciate all feedback 
 
 ### Most current version
 
-Please understand that Roundcube is a very young project. So because development never stops and in order to ease the burden on us, we hereby ask you to test your issues always against the latest available version from [git](/roundcube/roundcubemail) or click this link directly [Latest version from master](https://github.com/roundcube/roundcubemail/archive/master.zip)
+Because development never stops and in order to ease the burden on us, we hereby ask you to test your issues always against the latest available version from [git](/roundcube/roundcubemail) or click this link directly [Latest version from master](https://github.com/roundcube/roundcubemail/archive/master.zip)
 
 ### Check list
 
