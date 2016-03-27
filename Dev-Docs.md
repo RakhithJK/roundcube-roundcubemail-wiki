@@ -31,8 +31,8 @@ The root folder of a Roundcube installation contains the following folders:
 * `config/`
    Home of the local configurations files
 * `program/`
-   All application files are stored in this folder. [[BR]]
-   These files will be replaced when upgrading the installation.[[BR]]
+   All application files are stored in this folder.
+   These files will be replaced when upgrading the installation.
 * `program/js/`
    Client JavaScript files
 * `program/lib/Roundcube`
@@ -52,7 +52,7 @@ The root folder of a Roundcube installation contains the following folders:
 * `logs/`
    Contains log files. This folder has to be writable for the webserver.
 * `temp/`
-   Location of temporary saved files such as attachments and cache files[[BR]]
+   Location of temporary saved files such as attachments and cache files
    This folder has to be writable for the webserver.
 * `skins/`
    Contains skin subfolders
