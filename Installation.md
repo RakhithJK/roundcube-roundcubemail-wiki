@@ -12,7 +12,7 @@ There's a nice [how-to](http://www.hmailserver.com/forum/viewtopic.php?t=5591) a
 
 ### Get Roundcube!
 
-To get started, you need to download Roundcube. The easiest way to get it is to visit [http://www.roundcube.net] and click on "Downloads".  Download the archive file containing Roundcube (name should end in `.tar.gz`) and extract its contents (on Windows, with WinZip or 7-Zip, on Mac/Unix with `tar xfz roundcubemail-xx.tar.gz` or `gunzip -c roundcube-xx.tar.gz | tar xf -`) in the current directory.
+To get started, you need to download Roundcube. The easiest way to get it is to visit http://www.roundcube.net and click on "Downloads".  Download the archive file containing Roundcube (name should end in `.tar.gz`) and extract its contents (on Windows, with WinZip or 7-Zip, on Mac/Unix with `tar xfz roundcubemail-xx.tar.gz` or `gunzip -c roundcube-xx.tar.gz | tar xf -`) in the current directory.
 
 ### Install dependecies
 
