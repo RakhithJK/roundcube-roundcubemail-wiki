@@ -108,6 +108,47 @@ Have fun with your new Roundcube installation!!
 *Other Issues*
    If you're still having trouble after following the steps above, check out the [support page](http://roundcube.net/support) where you'll find information about our forum or the mailing list. We also answered some [Frequently Asked Questions](FAQ/) concerning Roundcube.
 
-## Shell Script
+## Shell Scripts
 
-> Coming Soon
+### CentOS/RHEL
+
+This shell script is written for CentOS/RHEL and assumes Apache is installed in a default way, with your MySQL, SMTP and IMAP servers running on the localhost. You will also need to install wget (yum install -y wget) if you haven't already.  Once the script is finished, you can access roundcube by `http://{your_web_server}/roundcube` or `http://{your_web_server}/webmail? .
+
+[centos_rhel_install.sh​](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-centos_rhel_install-sh)
+
+### Debian
+
+This shell script is written for Debian with MySQL, SMTP and IMAP servers running on the localhost (SSL/TLS enabled and unauthenticated SMTP allowed from localhost). It will set up roundcube-1.1.0 in a virtual host accessible by `roundcube.yourdomain.tld`.
+
+The script will:
+ * download and extract roundube-1.1.0
+ * make /temp and /logs writable by the webserver
+ * create an apache-site configuration (virtualhost)
+ * create a mysql user and database
+ * create a config.inc.php
+ * remove the installer directory
+ * create a cronjob to run /bin/cleandb.sh daily
+ * enable apache modules 'deflate', 'expires' and 'headers'
+
+Install apache2:
+
+```
+# apt-get install apache2
+```
+Install php5:
+
+```
+# apt-get install php5 php-pear php5-mysql
+```
+Install php5-mcrypt and mhp5-intl (as recommended in the installation instructions):
+
+```
+# apt-get install php5-mcrypt php5-intl
+```
+
+Set default time zone in php.ini (examples: `UTC`, `Europe/Zurich`, or see the [PHP Manual](http://php.net/manual/en/timezones.php) for more):
+```
+sed -i -e "s/^;date\.timezone =.*$/date\.timezone = 'UTC'/" /etc/php5/apache2/php.ini
+```
+
+Run the script [debian_install_mysql.sh](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-debian_install_mysql-sh)​, also available for postgresql: [debian_install_postgres.sh​](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-debian_install_postgres-sh)
