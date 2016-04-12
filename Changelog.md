@@ -1,5 +1,43 @@
 # CHANGELOG
 
+## RELEASE 1.2-rc
+
+ * Managesieve: Refactored script parser to be 100x faster
+ * Enigma: added option to force users to use signing/encryption
+ * Enigma: Added option to attach public keys to sent mail ([#5152](/roundcube/roundcubemail/issues/5152))
+ * Enigma: Handle messages with text before an encrypted block ([#5149](/roundcube/roundcubemail/issues/5149))
+ * Enigma: Handle encrypted/signed content inside message/rfc822 attachments
+ * Enigma: Fix missing html/plain switch on multipart/signed messages ([#4963](/roundcube/roundcubemail/issues/4963))
+ * Enigma: Disable format=flowed for signed plain text messages ([#4960](/roundcube/roundcubemail/issues/4960))
+ * Enigma: Fix handling of encrypted + signed messages ([#4950](/roundcube/roundcubemail/issues/4950))
+ * Enigma: Fix invalid boundary use in signed messages structure
+ * Enable use of TLSv1.1 and TLSv1.2 for IMAP ([#4955](/roundcube/roundcubemail/issues/4955))
+ * Save copy of original .htaccess file when using installto.sh script ([#4947](/roundcube/roundcubemail/issues/4947))
+ * Fix regression where some message attachments could be missing on edit/forward ([#4939](/roundcube/roundcubemail/issues/4939))
+ * Fix regression in displaying contents of message/rfc822 parts ([#4937](/roundcube/roundcubemail/issues/4937))
+ * Fix handling of message/rfc822 attachments on replies and forwards ([#4938](/roundcube/roundcubemail/issues/4938))
+ * Fix PDF support detection in Firefox > 19 ([#4941](/roundcube/roundcubemail/issues/4941))
+ * Fix path traversal vulnerability in setting a skin [CVE-2015-8770] ([#4945](/roundcube/roundcubemail/issues/4945))
+ * Fix so drag-n-drop of text (e.g. recipient addresses) on compose page actually works ([#4944](/roundcube/roundcubemail/issues/4944))
+ * Fix .htaccess rewrite rules to not block .well-known URIs ([#4943](/roundcube/roundcubemail/issues/4943))
+ * Fix mail view scaling on iOS ([#4915](/roundcube/roundcubemail/issues/4915))
+ * Fix PHP7 warning "session_start(): Session callback expects true/false return value" ([#4948](/roundcube/roundcubemail/issues/4948))
+ * Fix XSS issue in SVG images handling ([#4949](/roundcube/roundcubemail/issues/4949))
+ * Fix missing language name in "Add to Dictionary" request in HTML mode ([#4951](/roundcube/roundcubemail/issues/4951))
+ * Fix (again) security issue in DBMail driver of password plugin [CVE-2015-2181] ([#4958](/roundcube/roundcubemail/issues/4958))
+ * Fix bug where Archive/Junk buttons were not active after page jump with select=all mode ([#4961](/roundcube/roundcubemail/issues/4961))
+ * Fix bug in long recipients list parsing for cases where recipient name contained @-char ([#4964](/roundcube/roundcubemail/issues/4964))
+ * Plugin API: Added addressbook_export hook
+ * Fix additional_message_headers plugin compatibility with Mail_Mime >= 1.9 ([#4966](/roundcube/roundcubemail/issues/4966))
+ * Hide DSN option in Preferences when smtp_server is not used ([#4967](/roundcube/roundcubemail/issues/4967))
+ * Fix handling of body parameter in mail compose request
+ * Protect download urls against CSRF using unique request tokens ([#4957](/roundcube/roundcubemail/issues/4957))
+ * newmail_notifier: Refactor desktop notifications
+ * Fix so contactlist_fields option can be set via config file
+ * Fix so SPECIAL-USE assignments are forced only until user sets special folders ([#4782](/roundcube/roundcubemail/issues/4782))
+ * Fix performance in reverting order of THREAD result
+ * Fix converting mail addresses with @www. into mailto links ([#5197](/roundcube/roundcubemail/issues/5197))
+
 ## RELEASE 1.2-beta
 
  * Update TinyMCE to version 4.2
