@@ -24,7 +24,7 @@
  * Fix PHP7 warning "session_start(): Session callback expects true/false return value" ([#4948](/roundcube/roundcubemail/issues/4948))
  * Fix XSS issue in SVG images handling ([#4949](/roundcube/roundcubemail/issues/4949))
  * Fix missing language name in "Add to Dictionary" request in HTML mode ([#4951](/roundcube/roundcubemail/issues/4951))
- * Fix (again) security issue in DBMail driver of password plugin [CVE-2015-2181] ([#4958](/roundcube/roundcubemail/issues/4958))
+ * Fix (again) security issue in DBMail driver of password plugin (CVE-2015-2181) ([#4958](/roundcube/roundcubemail/issues/4958))
  * Fix bug where Archive/Junk buttons were not active after page jump with select=all mode ([#4961](/roundcube/roundcubemail/issues/4961))
  * Fix bug in long recipients list parsing for cases where recipient name contained @-char ([#4964](/roundcube/roundcubemail/issues/4964))
  * Plugin API: Added addressbook_export hook
@@ -36,7 +36,7 @@
  * Fix so contactlist_fields option can be set via config file
  * Fix so SPECIAL-USE assignments are forced only until user sets special folders ([#4782](/roundcube/roundcubemail/issues/4782))
  * Fix performance in reverting order of THREAD result
- * Fix converting mail addresses with @www. into mailto links ([#5197](/roundcube/roundcubemail/issues/5197))
+ * Fix converting mail addresses with `@www.` into mailto links ([#5197](/roundcube/roundcubemail/issues/5197))
 
 ## RELEASE 1.2-beta
 
@@ -72,7 +72,6 @@
  * Password plugin: Added 'kpasswd' driver by Peter Allgeyer
  * Add initdb.sh to create database from initial.sql script with prefix support ([#4722](/roundcube/roundcubemail/issues/4722))
  * Plugin API: Added disabled_plugins an disabled_buttons options in html_editor hook
- * Plugin API: Added html2text hook
  * Plugin API: Added message_part_body hook
  * Plugin API: Added message_ready hook
  * Plugin API: Add special onload() method to execute plugin actions before startup (session and GUI initialization)
@@ -82,6 +81,26 @@
  * Fix bug where message content could overlap attachments list in Larry skin ([#4876](/roundcube/roundcubemail/issues/4876))
  * Fix so microseconds macro (u) in log_date_format works ([#4855](/roundcube/roundcubemail/issues/4855))
  * Fix so unrecognized TNEF attachments are displayed on the list of attachments ([#5138](/roundcube/roundcubemail/issues/5138))
+
+## RELEASE 1.1.5
+
+ * Plugin API: Added `html2text` hook
+ * Plugin API: Added `addressbook_export` hook
+ * Fix missing emoticons on html-to-text conversion
+ * Fix random "access to this resource is secured against CSRF" message at logout ([#4956](/roundcube/roundcubemail/issues/4956))
+ * Fix missing language name in "Add to Dictionary" request in HTML mode ([#4951](/roundcube/roundcubemail/issues/4951))
+ * Enable use of TLSv1.1 and TLSv1.2 for IMAP ([#4955](/roundcube/roundcubemail/issues/4955))
+ * Fix XSS issue in SVG images handling ([#4949](/roundcube/roundcubemail/issues/4949))
+ * Fix (again) security issue in DBMail driver of password plugin (CVE-2015-2181) ([#4958](/roundcube/roundcubemail/issues/4958))
+ * Fix bug in long recipients list parsing for cases where recipient name contained @-char ([#4964](/roundcube/roundcubemail/issues/4964))
+ * Fix additional_message_headers plugin compatibility with Mail_Mime >= 1.9 ([#4966](/roundcube/roundcubemail/issues/4966))
+ * Hide DSN option in Preferences when smtp_server is not used ([#4967](/roundcube/roundcubemail/issues/4967))
+ * Protect download urls against CSRF using unique request tokens ([#4957](/roundcube/roundcubemail/issues/4957))
+ * newmail_notifier Plugin: Refactored desktop notifications
+ * Fix so contactlist_fields option can be set via config file
+ * Fix so SPECIAL-USE assignments are forced only until user sets special folders ([#4782](/roundcube/roundcubemail/issues/4782))
+ * Fix performance in reverting order of THREAD result
+ * Fix converting mail addresses with `@www.` into mailto links ([#5197](/roundcube/roundcubemail/issues/5197))
 
 ## RELEASE 1.1.4
 
