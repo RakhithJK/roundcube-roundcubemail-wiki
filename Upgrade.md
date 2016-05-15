@@ -16,19 +16,19 @@ Next, perform a database dump (schema *and* data) and save the file in a safe pl
 
 ### Get the latest version
 
-Download it from http://www.roundcube.net/download and copy the Tarball to a directory on your server.
+Download it from https://roundcube.net/download and copy the Tarball to a directory on your server.
 
 Unpack the tarball and read UPGRADING and INSTALL files and check system requirements of the new version.
-```
-    cd <where-the-tarball-is-saved>
-    tar xf roundcubemail-*.tar.gz
+```sh
+cd <where-the-tarball-is-saved>
+tar xf roundcubemail-*.tar.gz
 ```
 ### Update your existing Roundcube installation
 
 The easiest way to do this is to use the `installto.sh` shell script bundled with Roundcube.
-```
-    cd <the-unpacked-roundcube-directory>
-    bin/installto.sh <your-existing-roundcube-directory>
+```sh
+cd <the-unpacked-roundcube-directory>
+bin/installto.sh <your-existing-roundcube-directory>
 ```
 Follow the instructions you'll see in the shell. The script first copies all updated files to the target directory and then runs the update script that will update/migrate your local configuration files and update the database schema if necessary.
 
@@ -39,7 +39,7 @@ Instead of using that script you can execute the steps manually. Read the _Updat
 
 ### Get the latest version
 
-Download the files for the newest version first. The easiest way to get it is to visit http://www.roundcube.net and click on "Downloads" or just go to http://www.roundcube.net/download.  Wait for it to download, and then unzip (using WinZip or "tar xvfz roundcubemail-*.tar.gz") in the current directory.
+Download the files for the newest version first. The easiest way to get it is from https://roundcube.net/download. Wait for it to download, and then unzip (using WinZip or "tar xvfz roundcubemail-*.tar.gz") in the current directory.
 
 Now you should read UPGRADING and INSTALL files and check system requirements of the new version.
 
@@ -53,7 +53,7 @@ Use your favorite FTP/SFTP/SCP program to upload the updated files, which are:
  * ./installer/*
  * ./vendor/*
 
-Upload `plugins/*` and `skins/*` from the release package but don't replace the entire `skins` and `plugins` folders!
+Upload `plugins/*` and `skins/*` from the release package but don't replace the entire `skins` and `plugins` folders! You might have added other skins and plugins to those directories which you want to keep.
 
 Also copy the default config file and the mimetypes mapping:
 
@@ -63,7 +63,7 @@ Also copy the default config file and the mimetypes mapping:
 ### Run the installer
 
 Edit your Roundcube config (`config/config.inc.php`, or `config/main.inc.php` for versions < 1.0) and set `'enable_installer'` to true.
-Then open !http://<url-to-roundcube>/installer/ in your web browser and click "3. Test config"
+Then open `http://<url-to-roundcube>/installer/` in your web browser and click "3. Test config"
 
 Follow the instructions on the screen to update your local config and the database schema.
 
@@ -80,13 +80,13 @@ If you didn't download the "complete" package, 3rd party libraries still need to
  1. Get composer from https://getcomposer.org/download/
  2. Rename the `composer.json-dist` file into `composer.json`
  3. if you want to use LDAP address books, enable the LDAP libraries in your `composer.json` file by moving the items from "suggest" to the "require" section:
- ```    
-        "require": {
-            ...
-            "pear-pear.php.net/net_ldap2": ">=2.0.12",
-            "kolab/Net_LDAP3": "dev-master"
-        }
- ```
+```
+    "require": {
+        ...
+        "pear-pear.php.net/net_ldap2": "~2.2.0",
+        "kolab/Net_LDAP3": "dev-master"
+    }
+```
  4. run `php composer.phar install --no-dev`
 
 Please note that this requires shell access to the webserver. If you don't have that, download the "complete" package and copy the `vendor` directory into the Roundcube installation directory. That already contains all the dependencies you'd otherwise install with Composer.
