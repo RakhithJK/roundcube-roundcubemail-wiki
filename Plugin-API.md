@@ -107,7 +107,7 @@ Registration of hooks is done by calling
 ```
 where the second argument is a [PHP Callback](http://php.net/manual/en/language.pseudo-types.php#language.types.callback) which can link to a simple function or an object method.
 
-The registered function receives one hash array as argument which contains specific data of the current context depending on the hook. See [wiki:Plugin_Hooks] for a complete description of all hooks and their argument fields. The argument var may be altered by the callback function and can (even partially) be returned to the application.
+The registered function receives one hash array as argument which contains specific data of the current context depending on the hook. See [[Plugin Hooks]] for a complete description of all hooks and their argument fields. The argument var may be altered by the callback function and can (even partially) be returned to the application.
 
 ### Client scripts and UI elements
 
@@ -122,7 +122,7 @@ The client script can actually make use of all the methods of the Roundcube appl
     rcmail.addEventListener('event', callback);
     rcmail.removeEventListener('event', callback);
 ```
-For a detailed list of events supported by the app see [wiki:Plugin_Events].
+For a detailed list of events supported by the app see [[Plugin Events]].
 The most important event of course is `init`. This is where your plugin can add buttons and register its own commands to the main application script. Here's a sample showing what a plugin script could look like:
 ```js
     rcmail.addEventListener('init', function(evt) {
@@ -136,7 +136,7 @@ The most important event of course is `init`. This is where your plugin can add 
       rcmail.register_command('plugin.samplecmd', sample_handler, true);
     });
 ```
-With `rcmail.add_element(button,'toolbar')` the button is appended to the toolbar container. Then `rcmail.register_button()` tells the application where the button is and which command it is responsible for. And finally `rcmail.register_command()` links the custom command (triggered by the onclick handler of the button) with the callback function of the plugin client script. For a detailed documentation of the client API, see [wiki:Doc_Javascript].
+With `rcmail.add_element(button,'toolbar')` the button is appended to the toolbar container. Then `rcmail.register_button()` tells the application where the button is and which command it is responsible for. And finally `rcmail.register_command()` links the custom command (triggered by the onclick handler of the button) with the callback function of the plugin client script. For a detailed documentation of the client API, see [[Javascript API]].
 
 [jQuery](http://jquery.com/) is an integrated part of Roundcube which allows you to make use of the very comfortable jQuery functions when writing plugin scripts.
 
