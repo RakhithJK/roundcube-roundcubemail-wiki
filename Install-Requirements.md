@@ -1,11 +1,11 @@
 ## Server Requirements
 
-(for stable version 1.1)
+(for stable version 1.2)
 
- * Apache, Lighttpd (>=1.4.13 for SSL), Cherokee, Hiawatha or Nginx web server
+ * Apache, Lighttpd, Cherokee, Hiawatha or Nginx web server
  * Directory on the Web server allowed to run scripts
  * If using Apache, .htaccess support or configuration to override DirectoryIndex
- * PHP version 5.3.7 or greater with
+ * PHP version 5.4 or greater with
     * PCRE (Perl-Compatible Regular Expressions)
     * DOM
     * JSON
@@ -16,18 +16,18 @@
     * iconv (recommended)
     * OpenSSL (recommended)
     * Mbstring (optional)
-    * !FileInfo (optional)
+    * FileInfo (optional)
     * Mcrypt (optional)
     * Zip (optional)
     * Pspell (optional)
  * PEAR packages distributed with Roundcube or external:
-   * Mail_Mime 1.9.0 or newer
-   * Net_SMTP 1.6.3 or newer (get latest from https://github.com/pear/Net_SMTP/)
+   * Mail_Mime 1.10.0 or newer
+   * Net_SMTP 1.7.1 or newer
    * Net_IDNA2 0.1.1 or newer
    * Auth_SASL 1.0.6 or newer
-   * Net_Sieve 1.3.2 or newer (for managesieve plugin)
-   * Crypt_GPG 1.2.0 or newer (for enigma plugin)
-   * Net_LDAP2 2.0.12 or newer (for LDAP address books)
+   * Net_Sieve 1.5.0 or newer (for managesieve plugin)
+   * Crypt_GPG 1.4.1 or newer (for enigma plugin)
+   * Net_LDAP2 2.2.0 or newer (for LDAP address books)
    * [kolab/Net_LDAP3](https://git.kolab.org/diffusion/PNL/php-net_ldap.git) dev-master (for LDAP address books)
  * php.ini options:
     * error_reporting E_ALL & ~E_NOTICE (or lower)
@@ -53,10 +53,10 @@
 
 ## Tested browsers
 
- * Internet Explorer 7 (Windows XP) - _requires legacy_browser plugin since Roundcube 1.1_
- * Internet Explorer 8 (Windows XP/7) - _requires legacy_browser plugin since Roundcube 1.1_
- * Internet Explorer 9 (Windows 7)
  * Internet Explorer 10 (Windows 8)
+ * Internet Explorer 9 (Windows 7)
+ * Internet Explorer 8 (Windows XP/7) - _requires legacy_browser plugin since Roundcube 1.1_
+ * Internet Explorer 7 (Windows XP) - _requires legacy_browser plugin since Roundcube 1.1_
  * Safari 3+ (Mac OS X 10.5 and Windows XP)
  * Firefox 3.6 (Windows XP, Linux) - _requires legacy_browser plugin since Roundcube 1.1_
  * Firefox 4+ (Windows, Linux)
