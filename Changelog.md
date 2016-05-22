@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## RELEASE 1.2.0
+
+ * Enigma: Added enigma_debug option
+ * Fix message list multi-select/deselect issue ([#5219](/roundcube/roundcubemail/issues/5219))
+ * Fix bug where getting HTML editor content could steal focus from other form controls ([#5223](/roundcube/roundcubemail/issues/5223))
+ * Fix bug where contact search menu fields where always unchecked in Larry skin
+ * Fix autoloading of 'html' class
+ * Fix bug where Encrypt button appears when switching editor to HTML ([#5235](/roundcube/roundcubemail/issues/5235))
+ * Fix XSS issue in href attribute on area tag ([#5240](/roundcube/roundcubemail/issues/5240))
+
 ## RELEASE 1.2-rc
 
  * Managesieve: Refactored script parser to be 100x faster
