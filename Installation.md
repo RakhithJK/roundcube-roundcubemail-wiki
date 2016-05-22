@@ -92,7 +92,7 @@ Roundcube use .htaccess files to protect this directories, be sure to allow over
 
 ## Conclusion
 
-This is a very basic setup to get you up and running with Roundcube in less than twenty minutes.  There are plenty of other options, and a lot more options to investigate. See [wiki:Howto_Config] or browse the [forums](http://www.roundcubeforum.net) for other tricks and modifications, as well as support if you just can't get it working.
+This is a very basic setup to get you up and running with Roundcube in less than twenty minutes.  There are plenty of other options, and a lot more options to investigate. See [[Configuration]] or browse the [forums](http://www.roundcubeforum.net) for other tricks and modifications, as well as support if you just can't get it working.
 
 Have fun with your new Roundcube installation!!
 
