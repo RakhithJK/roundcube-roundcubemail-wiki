@@ -14,11 +14,16 @@ This wiki and tracker site is the base of the ongoing development of Roundcube W
 - [[Build from source]]
 - [[Upgrade]]
 - [[FAQ]]
+- [[Online Help]]
 
 ## Development
 
 - [[How to report issues|Howto-Report-Issues]]
+- [[Plugin Development|Plugin-API]]
+  - [[Plugin Hooks]]
+  - [[JavaScript Events|Plugin-Events]]
 - [[How to get involved|Dev-Contribution]]
+- [[Translating|Languages]]
 - [[Development Guidelines|Dev-Guidelines]]
 - [[Accessibility Guidelines|Dev-Accessibility-Guidelines]]
 - [[Roundcube Documentation|Dev-Docs]]
