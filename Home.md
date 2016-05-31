@@ -22,6 +22,8 @@ This wiki and tracker site is the base of the ongoing development of Roundcube W
 - [[Plugin Development|Plugin-API]]
   - [[Plugin Hooks]]
   - [[JavaScript Events|Plugin-Events]]
+- [[Skin Development|Skins]]
+  - [[Skin Markup]]
 - [[How to get involved|Dev-Contribution]]
 - [[Translating|Languages]]
 - [[Development Guidelines|Dev-Guidelines]]
