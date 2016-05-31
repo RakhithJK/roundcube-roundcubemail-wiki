@@ -21,7 +21,7 @@ _Example:_
 
 ### roundcube:var
 
-Returns the content of the specified environment variable. See [Environment variables](#Environmentvariables) for possible values.
+Returns the content of the specified environment variable. See [Environment variables](#environment-variables) for possible values.
 
 _Attributes_:
  * name: _The variable name_
@@ -33,7 +33,7 @@ _Example:_
 
 ### roundcube:exp
 
-Evaluates the given expression and returns the resulting content. The syntax of the expressions is actually PHP code but can contain variables as described in [Environment variables](#Environmentvariables).
+Evaluates the given expression and returns the resulting content. The syntax of the expressions is actually PHP code but can contain variables as described in [Environment variables](#environment-variables).
 
 _Attributes_:
  * expression: _The expression to evaluate_
@@ -177,8 +177,6 @@ Inserts the product name set by config.
 
 ### logo
 
-(since [milestone:0.6-beta])
-
 Creates a `<img>` tag to display the logo. If set, the `src` attribute is replaced by the config option `skin_logo`.
 
 _Attributes_
@@ -188,12 +186,12 @@ _Attributes_
 ### mailboxlist
 
 The list of subscribed mailboxes/folders of the current IMAP account either as `<ul>` or `<select>`.
-See [source:github/skins/larry/templates/message.html message.html] for examples.
+See [message.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/message.html) for examples.
 
 ### messages
 
 Container for the table of messages. Supports many attributes for styling.
-See [source:github/skins/larry/templates/mail.html mail.html] for an example.
+See [mail.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/mail.html) for an example.
 
 ### messagecountdisplay
 
@@ -210,42 +208,42 @@ Container to display the currently selected mailbox/folder name.
 ### messageheaders
 
 Creates a table with headers of the currently displayed message.
-See [source:github/skins/larry/templates/message.html message.html] for an example.
+See [message.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/message.html) for an example.
 
 ### messagebody
 
 This is where the message content will be inserted.
-Usable in [source:github/skins/larry/templates/message.html message.html] and [source:github/skins/larry/templates/messagepreview.html messagepreview.html]
+Usable in [message.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/message.html) and [messagepreview.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/messagepreview.html)
 
 ### messagecontentframe
 
 Inserts an `<iframe>` - the preview pane - to load the message preview.
-See [source:github/skins/larry/templates/mail.html mail.html] for an example.
+See [mail.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/mail.html) for an example.
 
 ### messagepartframe
 
 Creates an `<iframe>` to load the selected attachment.
-Only used in [source:github/skins/larry/templates/messagepart.html messagepart.html].
+Only used in [messagepart.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/messagepart.html).
 
 ### messagepartcontrols
 
 Filename, size and download link of the selected attachment.
-Used in [source:github/skins/larry/templates/messagepart.html messagepart.html].
+Used in [messagepart.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/messagepart.html).
 
 ### searchfilter
 
 Creates a drop-down menu to select quick-search filters.
-See [source:github/skins/larry/templates/mail.html mail.html] for an example.
+See [mail.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/mail.html) for an example.
 
 ### searchform
 
 A search input field surrounded with a `<form>` used for searching messages or contacts.
-See [source:github/skins/larry/templates/mail.html mail.html] for an example.
+See [mail.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/mail.html) for an example.
 
 ### messageattachments
 
 The list of attachments of the currently displayed message.
-Usable in [source:github/skins/larry/templates/message.html message.html] and [source:github/skins/larry/templates/messagepreview.html messagepreview.html]
+Usable in [message.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/message.html) and [messagepreview.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/messagepreview.html)
 
 ### blockedobjects
 
@@ -262,66 +260,64 @@ Message box displayed when a HTML message contains blocked objects such as remot
 ### receiptcheckbox
 ### storetarget
 
-See [source:github/skins/larry/templates/compose.html compose.html] for examples of the above objects.
+See [compose.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/compose.html) for examples of the above objects.
 
 ### filedroparea
 
-(since [milestone:0.9-beta])
-
 This container will be activated to receive files dragged & dropped into the browser window in order to be uploaded.
-Used in [source:github/skins/larry/templates/compose.html compose.html] and [source:github/skins/larry/templates/contactedit.html contactedit.html]
+Used in [compose.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/compose.html) and [contactedit.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/contactedit.html)
 
 ### directorylist
 
 Similar to the mailboxlist this inserts the list of available address directories.
-Used in [source:github/skins/larry/templates/addressbook.html addressbook.html].
+Used in [addressbook.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/addressbook.html).
 
 ### addresslist
 ### addressframe
 ### recordscountdisplay
 
-See [source:github/skins/larry/templates/addressbook.html addressbook.html] for an example.
+See [addressbook.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/addressbook.html) for an example.
 
 ### contacthead
 ### contactphoto
 ### contactdetails
 
-Used in [source:github/skins/larry/templates/contact.html contact.html].
+Used in [contact.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/contact.html).
 
 ### contacteditform
 ### contactedithead
 ### photouploadform
 
-Used in [source:github/skins/larry/templates/contactedit.html contactedit.html].
+Used in [contactedit.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/contactedit.html).
 
 ### importstep
 ### importnav
 
-See [source:github/skins/larry/templates/importcontacts.html importcontacts.html] for examples.
+See [importcontacts.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/importcontacts.html) for examples.
 
 ### prefsframe
 ### sectionslist
 ### userprefs
 ### sectionname
 
-See [source:github/skins/larry/templates/settings.html settings.html] for examples.
+See [settings.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/settings.html) for examples.
 
 ### identitieslist
 
-Used in [source:github/skins/larry/templates/identities.html identities.html].
+Used in [identities.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/identities.html).
 
 ### identityform
 
-Used in [source:github/skins/larry/templates/identityedit.html identityedit.html].
+Used in [identityedit.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/identityedit.html).
 
 ### foldersubscription
 ### folderframe
 
-See [source:github/skins/larry/templates/folders.html folders.html] for examples.
+See [folders.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/folders.html) for examples.
 
 ### folderdetails
 
-Used in [source:github/skins/larry/templates/folderedit.html folderedit.html].
+Used in [folderedit.html](/roundcube/roundcubemail/blob/master/skins/larry/templates/folderedit.html).
 
 
 ## Environment variables
@@ -361,25 +357,24 @@ Similar to the `cookie:` selector this one provides access to values of the curr
 
 The Roundcube backend provides a browser detection class which analyzes the user agent string submitted by the client and extracts certain values and boolean properties. The browser selector contains the following properties:
 
-|| `ie` || True if Internet Explorer ||
-|| `mz` || True if Mozilla Firefox or other Mozilla derivate ||
-|| `ns` || True if Netscape browser ||
-|| `ns4` || True if Netscape 4 ||
-|| `opera` || True for Opera browsers ||
-|| `khtml`  || True for KHTML-based browsers ||
-|| `safari` || Alias for KHTML ||
-|| `chrome` || True for Google Chrome browser ||
-|| `ver` || The version number according to the browser type ||
-|| `lang` || The user agent language (2 chars) ||
-|| `win` || True for Windows operating system ||
-|| `mac` || True for Mac OS ||
-|| `linux` || True for any Linux OS ||
-|| `unix` || True for other Unix systems ||
+* `ie`  True if Internet Explorer
+* `mz`  True if Mozilla Firefox or other Mozilla derivate
+* `ns`  True if Netscape browser
+* `opera`  True for Opera browsers
+* `khtml`   True for KHTML-based browsers
+* `safari`  Alias for KHTML
+* `chrome`  True for Google Chrome browser
+* `ver`  The version number according to the browser type
+* `lang`  The user agent language (2 chars)
+* `win`  True for Windows operating system
+* `mac`  True for Mac OS
+* `linux`  True for any Linux OS
+* `unix`  True for other Unix systems
 
 
 ## Conditional expressions
 
-If a tag has the _condition_ attribute it will only create output if the conditional expression within this attribute evaluates to true. These expressions consist of [environment variables](#Environmentvariables), boolean operators and also PHP functions. They should either evaluate to true or false, numeric values > 0 are considered as true.
+If a tag has the _condition_ attribute it will only create output if the conditional expression within this attribute evaluates to true. These expressions consist of [environment variables](#environment-variables), boolean operators and also PHP functions. They should either evaluate to true or false, numeric values > 0 are considered as true.
 
 _Examples:_
 
