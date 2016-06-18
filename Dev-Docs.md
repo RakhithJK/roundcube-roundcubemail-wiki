@@ -8,7 +8,7 @@
 
 ### Controller
  * The controller (index.php) creates an instance of the main application class `rcmail` which is a singleton
- * Configuration is read from `config/config.inc.php` and `config/defailts.inc.php`
+ * Configuration is read from `config/config.inc.php` and `config/defaults.inc.php`
  * Login to the IMAP server (-> user authentication) is triggered from index.php
  * Basic sequence: `rcmail::get_instance()` -> `rcmail::load_gui()` -> `new rcmail_template()` -> `rcmail_template::send()`
 
