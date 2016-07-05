@@ -225,7 +225,7 @@ In your plugin code, you need to link this container with a function using a han
       $content = "Foo";
       return($content);
     }
-```js
+```
 
 Finally, to instruct roundcube to show your template:
 
