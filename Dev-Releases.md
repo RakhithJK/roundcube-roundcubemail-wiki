@@ -49,7 +49,7 @@ The steps to take are basically
 
 The process of creating the tarball is packed in a Makefile. Get it from [gist.github.com](https://gist.github.com/2725894#file-makefile) and execute
 ```
-    make [GITBRANCH=release-x.y VERSION=x.y] dependent framework
+    make [GITBRANCH=release-x.y VERSION=x.y.z] dependent framework
 ```
 This will produce a tarball named roundcubemail-x.y.tar.gz which can be distributed.
 
@@ -69,13 +69,13 @@ gzip ./roundcubemail-patch-x.y.z.patch
 ## 2.1 Create "complete" package
 
 Complete packages do not only contain the Roundcube sources but also have all dependencies
-resovled and packed into the tarball. These packages don't require an additional run of
+resolved and packed into the tarball. These packages don't require an additional run of
 composer but represent a self-contained installation.
 
 To create such a release package, use the above mentioned [Makefile](https://gist.github.com/2725894#file-makefile) and execute
 
 ```
-make [GITBRANCH=release-x.y VERSION=x.y] complete
+make [GITBRANCH=release-x.y VERSION=x.y.z] complete
 ```
 
 ## 2.2 Signing release packages
@@ -103,19 +103,19 @@ The differences between branches and tags are the following:
 Tags are to be signed with a GPG key. This can be the developers/release
 managers identity. So first, tell git which identity to use for signing:
 ```
-git config [--global] user.signingkey 0ABCDEF123
+git config [--global] user.signingkey 41C4F7D5
 ```
 Then create a signed tag (with the `-s` option):
 ```
 git checkout release-x.y
-git tag -s -a vy.y.z -m "Tagging files for x.y.z"
+git tag -s -a x.y.z -m "Tagging files for x.y.z"
 git push --tags
 ```
 
 ## 4. Publishing the release files
 
 The previously built release files are not published on Github under [releases](https://github.com/roundcube/roundcubemail/releases).
-Click the button "Draft a new relaase" and then select the previously created
+Click the button "Draft a new release" and then select the previously created
 (signed) tag from the drop-down field.
 
 Give a release title "Roundcube Webmail x.y.z" and write a short summary of the
@@ -129,8 +129,8 @@ Finally, publish the release with a click on the according button.
 
 ## 5. Announcements
 
- * update downloads page on roundcube.net
- * create a new post on the roundcube.net news feed
- * post notification to announce@, dev@ and users@
- * post on Twitter (@roundcube) and G+
+ * Update downloads page on roundcube.net
+ * Create a new post on the roundcube.net news feed
+ * Post notification to announce@, dev@ and users@
+ * Post on Twitter (@roundcube) and G+
  
