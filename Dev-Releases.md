@@ -91,7 +91,14 @@ Also verify the signatures before publishing them:
 make verify
 ```
 
-# 3 Tagging release in git
+## 3. Tagging release in git
+
+The differences between branches and tags are the following:
+
+ * branch may be "patched" or "hotfixed"
+ * a tag is just a snapshot and may not be altered
+ * tags are signed with GPG
+ * tags are the basis for publishing releases on Github
 
 Tags are to be signed with a GPG key. This can be the developers/release
 managers identity. So first, tell git which identity to use for signing:
@@ -105,17 +112,10 @@ git tag -s -a vy.y.z -m "Tagging files for x.y.z"
 git push --tags
 ```
 
-The differences between branches and tags are the following:
-
- * branch may be "patched" or "hotfixed"
- * a tag is just a snapshot and may not be altered
- * tags are signed with GPG
- * tags are the basis for publishing releases on github
-
-## 4. Publising the release files
+## 4. Publishing the release files
 
 The previously built release files are not published on Github under [releases](https://github.com/roundcube/roundcubemail/releases).
-Click the button "Draft a new relase" and then select the previously created
+Click the button "Draft a new relaase" and then select the previously created
 (signed) tag from the drop-down field.
 
 Give a release title "Roundcube Webmail x.y.z" and write a short summary of the
