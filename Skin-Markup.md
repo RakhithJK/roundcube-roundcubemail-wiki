@@ -328,6 +328,12 @@ Certain variables from the running PHP script are available to the templates too
 
 The following environments are available:
 
+### session:
+
+This selector gives access to session variables. For example:
+
+    session:username
+
 ### config:
 
 All configuration values as set in `config/main.inc.php` can be accessed using this selector. It is also possible to set a default value which is used in case the config parameter is not set. This is done by adding another colon followed by the default value:
