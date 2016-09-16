@@ -1,6 +1,6 @@
 # Plugin Resources
 
-_Also see [[Plugin Hooks]], [[Javascript API]], [[Plugin Events]] and [[Plugin Repository]]_
+_Also see [[Plugin Hooks]], [[Javascript API]], [[Plugin Events]]_
 
 Plugins extend the functionality of Roundcube.
 They are not part of the core application but can be installed and activated individually.
@@ -22,11 +22,6 @@ To disable a plugin, just remove it from the list.
 ### Plugin Repository
 
 The official plugin repository lists plugins written by community members and they can be installed and updated from there using [Composer](http://getcomposer.org). Visit [plugins.roundcube.net](http://plugins.roundcube.net) and read the instructions how to install or publish plugins in the future.
-
-#### Old Community Plugins List
-
-Some older plugins didn't make it to the repository but are listed on our legacy [[Plugin Repository]] page.
-
 
 ## How to Write a Plugin
 
