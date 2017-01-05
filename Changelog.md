@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## RELEASE 1.3
+## RELEASE 1.3-beta
 
  * Nicely handle contact deletion on contact edit ([#5522](/roundcube/roundcubemail/issues/5522))
  * vcard_attachments: Add possibility to attach contact vCard to composed message ([#4997](/roundcube/roundcubemail/issues/4997))
