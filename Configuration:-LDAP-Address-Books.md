@@ -70,7 +70,7 @@ This example config file should just work for the Roundcube LDAP addressbook ser
 - the nis schema is removed because the simple addressbook do not need it.
 - if you use the proposed config file, open it and change the password (*rootpw*, use slappasswd to create it).
 
-After you created/modified it, set restrictive permissions for the config file: since the password is stored inside, normal user must not be able to read it!
+After you created/modified it, set restrictive permissions for the config file: since the password is stored inside, normal user must not be able to read it.
 User and group must correspond with the ones you found above in */etc/default/slapd* or even with the ones your LDAP is running with.
 
     $ sudo chmod 640 /etc/ldap/slapd.conf
@@ -85,17 +85,17 @@ If you do not find any errors here, your LDAP server is ready now to become your
 
 ## Setup the LDAP Server
 
-Once the OpenLDAP server is running, you can start to set it up. First of all, it could be a good choise to check if you can even access it:
+Once the OpenLDAP server is running, you can start to set it up. First, check if you can even access it:
 
     $ ldapsearch -xLLL -H ldap://localhost:389 -D cn=admin,dc=localhost -W -b dc=localhost
     Enter LDAP Password:
     No such object (32)
 
-The password must correspond withe the *rootpw* in the config file, the -D option corresponds with the *rootdn* and the -b with the *suffix*. If you get *No such object (32)*, this means that the LDAP directory is still empty, thus is ready to be filled now.
+The password must correspond with the *rootpw* in the config file, the -D option corresponds with the *rootdn* and the -b with the *suffix*. If you get *No such object (32)*, this means that the LDAP directory is still empty, thus is ready to be filled now.
 
-We have to setup now a directory structure such that Roundcube can operate on it. Download the following shell script, configure the first few lines in it, and execute it with admin privileges on the server (use sudo or even run it as root): [rcabook-setup.sh](https://gist.github.com/rcubetrac/035af863abea7d89723225739a410e83)
+We now have to setup a directory structure that Roundcube can operate in. Download the following shell script, configure the first few lines, and execute it with admin privileges on the server (use sudo or even run it as root): [rcabook-setup.sh](https://gist.github.com/rcubetrac/035af863abea7d89723225739a410e83)
 
-You should get something like that:
+You should get something like this:
 
     $ sudo bash rcabook-setup.sh
     This script prepares an openLDAP server for a simple
@@ -167,7 +167,7 @@ If you see at least this 4 entries, your LDAP addressbook server is now ready to
 
 ## Configuring Roundcube
 
-The following example configurations (only the important fields are shown!) fits for a pbulic and a private LDAP addressbook working with the here described LDAP server setup:
+The following example configurations (only the important fields are shown!) fit public and private LDAP addressbooks working with the described LDAP server setup:
 
 ```php
 $config['ldap_public']['public'] = array(
@@ -209,7 +209,7 @@ Remark: the `%x` replacement for the `base_dn` do not work before RC version 0.6
 
 ## Other Clients than Roundcube
 
-There exists a lot of addressbook clients that can connect to a LDAP server. The most of them do not support contact groups yet, and the number of supported contact fields is often verry limited (please let me now if your experiences are different).
+Many addressbook clients can connect to a LDAP server. The most of them do not support contact groups yet, and the number of supported contact fields is often very limited (please let me now if your experiences are different).
 
 Usually you have to set the following fields:
 
