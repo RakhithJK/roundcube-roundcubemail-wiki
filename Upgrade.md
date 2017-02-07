@@ -25,11 +25,15 @@ tar xf roundcubemail-*.tar.gz
 ```
 ### Update your existing Roundcube installation
 
+* package `rsync` is required, used to copy new Roundcube files to existing Roundcube installation.
+* php function `system` must be enabled in `php.ini`.
+
 The easiest way to do this is to use the `installto.sh` shell script bundled with Roundcube.
 ```sh
 cd <the-unpacked-roundcube-directory>
 bin/installto.sh <your-existing-roundcube-directory>
 ```
+
 Follow the instructions you'll see in the shell. The script first copies all updated files to the target directory and then runs the update script that will update/migrate your local configuration files and update the database schema if necessary.
 
 Instead of using that script you can execute the steps manually. Read the _Updating manually_ section of the [UPGRADING](https://github.com/roundcube/roundcubemail/blob/master/UPGRADING) file from the release package.
