@@ -6,7 +6,7 @@ Plugins extend the functionality of Roundcube.
 They are not part of the core application but can be installed and activated individually.
 Roundcube comes with a number of plugins, and more third-party plugins are available for download.
 
-## Installing Plugins and Activating Plugins
+## Installing and Activating Plugins
 
 After downloading a plugin, extract (unzip) it in Roundcube's `plugins` directory. Doing this correctly should result in a subdirectory `plugins/<name of plugin>` which contains all of the plugin's files.
 
