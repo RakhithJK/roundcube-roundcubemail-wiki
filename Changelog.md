@@ -86,6 +86,31 @@
  * Fix some advanced search issues with multiple addressbooks ([#5572](/roundcube/roundcubemail/issues/5572))
  * Fix so group/addressbook selection is retained on page refresh
 
+## RELEASE 1.2.4
+
+ * Managesieve: Fix handling of scripts with nested rules ([#5540](/roundcube/roundcubemail/issues/5540))
+ * Managesieve: Fix parser issue with empty lines between comments ([#5657](/roundcube/roundcubemail/issues/5657))
+ * Managesieve: Fix possible defect in handling \r\n in scripts ([#5685](/roundcube/roundcubemail/issues/5685))
+ * Enigma: Fix handling of messages with nested PGP encrypted parts ([#5634](/roundcube/roundcubemail/issues/5634))
+ * Enigma: Fix PHP fatal error when decrypting a message with invalid signature ([#5555](/roundcube/roundcubemail/issues/5555))
+ * Enigma: Fix missing require statement for Crypt_GPG_KeyGenerator ([#5641](/roundcube/roundcubemail/issues/5641))
+ * Fix variable substitution in ldap host for some use-cases, e.g. new_user_identity ([#5544](/roundcube/roundcubemail/issues/5544))
+ * Fix adding images to new identity signatures
+ * Fix rsync error handling in installto.sh script ([#5562](/roundcube/roundcubemail/issues/5562))
+ * Fix some advanced search issues with multiple addressbooks ([#5572](/roundcube/roundcubemail/issues/5572))
+ * Fix so group/addressbook selection is retained on page refresh
+ * Fix bug where image data URIs in css style were treated as evil/remote in mail preview ([#5580](/roundcube/roundcubemail/issues/5580))
+ * Fix bug where external content in src attribute of input/video tags was not secured ([#5583](/roundcube/roundcubemail/issues/5583))
+ * Fix PHP error on update of a contact with multiple email addresses when using PHP 7.1 ([#5587](/roundcube/roundcubemail/issues/5587))
+ * Fix bug where mail content frame couldn't be reset in some corner cases ([#5608](/roundcube/roundcubemail/issues/5608))
+ * Fix bug where some classic skin images were not displayed in IE/Edge ([#5614](/roundcube/roundcubemail/issues/5614))
+ * Fix bug where signature couldn't be added above the quote in Firefox 51 ([#5628](/roundcube/roundcubemail/issues/5628))
+ * Fix regression where groups with email address were resolved to its members' addresses
+ * Fix update of group name in the contacts list header on group rename ([#5648](/roundcube/roundcubemail/issues/5648))
+ * Add rewrite rule to disable access to /vendor/bin folder in .htaccess ([#5630](/roundcube/roundcubemail/issues/5630))
+ * Fix bug where it was too easy accidentally move a folder when using the subscription checkbox ([#5655](/roundcube/roundcubemail/issues/5655))
+ * Fix XSS issue in handling of a style tag inside of an svg element
+
 ## RELEASE 1.2.3
 
  * Searching in both contacts and groups when LDAP addressbook with group_filters option is used
