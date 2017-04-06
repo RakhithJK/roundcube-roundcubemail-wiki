@@ -109,7 +109,7 @@
  * Fix update of group name in the contacts list header on group rename ([#5648](/roundcube/roundcubemail/issues/5648))
  * Add rewrite rule to disable access to /vendor/bin folder in .htaccess ([#5630](/roundcube/roundcubemail/issues/5630))
  * Fix bug where it was too easy accidentally move a folder when using the subscription checkbox ([#5655](/roundcube/roundcubemail/issues/5655))
- * Fix XSS issue in handling of a style tag inside of an svg element
+ * Fix XSS issue in handling of a style tag inside of an svg element (CVE-2017-6820)
 
 ## RELEASE 1.2.3
 
