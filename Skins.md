@@ -74,7 +74,7 @@ As of Roundcube version 0.9.0 the skinning system allows a skin to extend anothe
 }
 ```
 
-This basically adds the base skin folder to the search path for templates and assets. Now the extended skin only needs to provide the templates or includes that actually differ from the base skin. If you for example just want to add an additional CSS file which overrides certain styles of the Larry theme you can override the file include/links.html in your skin, adding another stylesheet. The the custom skin file can even include the equivalent from the basic themw by specifying the `skinPath` attribute:
+This basically adds the base skin folder to the search path for templates and assets. Now the extended skin only needs to provide the templates or includes that actually differ from the base skin. If you for example just want to add an additional CSS file which overrides certain styles of the Larry theme you can override the file include/links.html in your skin, adding another stylesheet. Then the custom skin file can even include the equivalent from the basic theme by specifying the `skinPath` attribute:
 
 ```
 <roundcube:include file="/includes/links.html" skinPath="skins/larry" />
