@@ -88,7 +88,9 @@ Access through your webserver to at least the following directories should be de
  * `/temp`
  * `/logs`
 
-Roundcube use .htaccess files to protect this directories, be sure to allow override of the `Limit` directives to get them taken into account.
+Roundcube use .htaccess files to protect this directories, be sure to allow override of the `Limit` directives to get them taken into account or configure non-apache web servers accordingly to deny direct access to these private resources.
+
+When running Roundcube at root of a virtual host, it's recommended to set the document root of that virtual host to the `public_html` directory of your Roundcube installation.
 
 ## Conclusion
 
