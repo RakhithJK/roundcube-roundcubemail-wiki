@@ -1,5 +1,42 @@
 # CHANGELOG
 
+## RELEASE 1.3-rc
+
+ * "Flattened" the larry theme: fresher look by removing shadows and gradients
+ * Support logging to php://stdout ([#5721](/roundcube/roundcubemail/issues/5721))
+ * Add support for DelSp=Yes in format=flowed messages ([#5702](/roundcube/roundcubemail/issues/5702))
+ * Update to jQuery 3.2.1
+ * Update to TinyMCE 4.5.6
+ * Plugin API: Call message_part_structure hook for sub-parts of multipart/alternative message ([#5678](/roundcube/roundcubemail/issues/5678))
+ * Enigma: Always use detached signatures ([#5624](/roundcube/roundcubemail/issues/5624))
+ * Enigma: Fix handling of messages with nested PGP encrypted parts ([#5634](/roundcube/roundcubemail/issues/5634))
+ * Minimize unwanted message loading in preview frame on drag ([#5616](/roundcube/roundcubemail/issues/5616))
+ * Fix failing database schema check in all engines except mysql ([#5730](/roundcube/roundcubemail/issues/5730))
+ * Fix autocomplete popup closing with click outside the input, don't handle Tab key as Enter ([#5606](/roundcube/roundcubemail/issues/5606))
+ * Fix jsdeps.json synchronization on update, warn about missing requirements of install-jsdeps.sh ([#5598](/roundcube/roundcubemail/issues/5598))
+ * Fix missing thread expand icon on search result in widescreen mode ([#5613](/roundcube/roundcubemail/issues/5613))
+ * Fix bug where image data URIs in css style were treated as evil/remote in mail preview ([#5580](/roundcube/roundcubemail/issues/5580))
+ * Fix bug where external content in src attribute of input/video tags was not secured ([#5583](/roundcube/roundcubemail/issues/5583))
+ * Fix PHP error on update of a contact with multiple email addresses when using PHP 7.1 ([#5587](/roundcube/roundcubemail/issues/5587))
+ * Fix bug where mail content frame couldn't be reset in some corner cases ([#5608](/roundcube/roundcubemail/issues/5608))
+ * Fix bug where some classic skin images were not displayed in IE/Edge ([#5614](/roundcube/roundcubemail/issues/5614))
+ * Fix bug where signature couldn't be added above the quote in Firefox 51 ([#5628](/roundcube/roundcubemail/issues/5628))
+ * Fix regression where groups with email address were resolved to its members' addresses
+ * Fix update of group name in the contacts list header on group rename ([#5648](/roundcube/roundcubemail/issues/5648))
+ * Add rewrite rule to disable access to /vendor/bin folder in `.htaccess` ([#5630](/roundcube/roundcubemail/issues/5630))
+ * Fix bug where it was too easy accidentally move a folder when using the subscription checkbox ([#5655](/roundcube/roundcubemail/issues/5655))
+ * Managesieve: Fix parser issue with empty lines between comments ([#5657](/roundcube/roundcubemail/issues/5657))
+ * Managesieve: Fix possible defect in handling `\r\n` in scripts ([#5685](/roundcube/roundcubemail/issues/5685))
+ * Fix/rephrase "unsaved changes" warning when cancelling a draft ([#5610](/roundcube/roundcubemail/issues/5610))
+ * Fix XSS issue in handling of a style tag inside of an svg element [CVE-2017-6820]
+ * Fix bug where settings/upload.inc could not be used by plugins ([#5694](/roundcube/roundcubemail/issues/5694))
+ * Fix regression in LDAP fuzzy search where it always used prefix search instead ([#5713](/roundcube/roundcubemail/issues/5713))
+ * Fix bug where namespace prefix could not be truncated on folders list if show_real_foldernames=true ([#5695](/roundcube/roundcubemail/issues/5695))
+ * Fix undesired effects when postgres database uses different timezone than PHP host ([#5708](/roundcube/roundcubemail/issues/5708))
+ * Installer: Fix DB schema initialization on MS SQL Server
+ * Fix bug where base_dn setting was ignored inside group_filters ([#5720](/roundcube/roundcubemail/issues/5720))
+ * Password: Fix security issue in virtualmin and sasl drivers [CVE-2017-8114]
+
 ## RELEASE 1.3-beta
 
  * Nicely handle contact deletion on contact edit ([#5522](/roundcube/roundcubemail/issues/5522))
