@@ -116,7 +116,7 @@ _Example:_
 
 ### roundcube:object
 
-Dynamic content which is created by the application is put into the template with this tag. An object is identified by the _name_ attribute and can require further attributes according to the object type as well as regular HTML attributes which are just passed through. The section [Content objects](Doc_SkinML#Contentobjects/) describes all available objects and their attributes.
+Dynamic content which is created by the application is put into the template with this tag. An object is identified by the _name_ attribute and can require further attributes according to the object type as well as regular HTML attributes which are just passed through. The section [Content objects](Skin-Markup#Contentobjects/) describes all available objects and their attributes.
 
 Please note that most objects are only available in certain steps/tempaltes. An object tag will be ignored and replaced by an empty string if it's not available.
 
