@@ -230,7 +230,7 @@
  * Fix bug where contact search menu fields where always unchecked in Larry skin
  * Fix autoloading of 'html' class
  * Fix bug where Encrypt button appears when switching editor to HTML ([#5235](/roundcube/roundcubemail/issues/5235))
- * Fix XSS issue in href attribute on area tag ([#5240](/roundcube/roundcubemail/issues/5240))
+ * Fix XSS issue in href attribute on area tag [CVE-2016-4552] ([#5240](/roundcube/roundcubemail/issues/5240))
 
 ## RELEASE 1.2-rc
 
