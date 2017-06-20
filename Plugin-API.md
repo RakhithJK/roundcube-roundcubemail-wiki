@@ -282,7 +282,7 @@ Now you can access the localized texts with `$this->gettext('somelabel')` in PHP
 For Roundcube we use [Transifex](https://www.transifex.com/projects/p/roundcube-webmail/) for collaborative translations. You can add your plugin's texts to our translation repository as well in order to get them translated by our volunteering translators. In order to do so, please send us a public URL to your en_US.inc source file to hello[at]roundcube.net and we'll add it as a resource to our Transifex account. The translation system will periodically pull the latest version from that URL.
 
 Finally, register at Transifex.com and read [the documentation](http://help.transifex.com/features/client/index.html#user-client) about how to pull translations using the tx command line utility.
-
+As there are a couple of differences in localization names between roundcube and transifex, please also check the [tx configuration](https://github.com/roundcube/roundcubemail/blob/master/.tx/config) of the main roundcube repository for a correct list of language mappings. You need to add this configuration before running tx the first time. E.g. if you already have a `fr.inc` file in your project you first need to remove that file manually, then run `tx pull` again to retrieve a `fr_FR.inc` file.
 
 ## Publishing Plugins
 
