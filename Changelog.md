@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## RELEASE 1.3.0
+
+ * Update to TinyMCE 4.5.7
+ * Fix bug where invalid recipients could be silently discarded ([#5739](/roundcube/roundcubemail/issues/5739))
+ * Fix conflict with `_gid` cookie of Google Analytics ([#5748](/roundcube/roundcubemail/issues/5748))
+ * Print error from CLI scripts when system/exec function is disabled ([#5744](/roundcube/roundcubemail/issues/5744))
+ * Fix bug where comment notation within style tag would cause the whole style to be ignored ([#5747](/roundcube/roundcubemail/issues/5747))
+ * Fix bug where it wasn't possible to scroll folders list in Edge ([#5750](/roundcube/roundcubemail/issues/5750))
+ * Fix folders list sorting on Windows - if php-intl is available ([#5732](/roundcube/roundcubemail/issues/5732))
+ * Fix addressbook searching by gender ([#5757](/roundcube/roundcubemail/issues/5757))
+ * Fix prevention from using % and * characters in folder name ([#5762](/roundcube/roundcubemail/issues/5762))
+ * Fix POST parameter reflection in default_charset selector ([#5768](/roundcube/roundcubemail/issues/5768))
+ * Enigma: Fix compatibility with assets_dir
+ * Managesieve: Skip redundant LISTSCRIPTS command
+ * Fix SQL syntax error on MariaDB 10.2 ([#5774](/roundcube/roundcubemail/issues/5774))
+ * Fix bug where zipdownload ignored files with the same name ([#5777](/roundcube/roundcubemail/issues/5777))
+ * Fix bug where it wasn't possible to set timezone to auto-detected value ([#5782](/roundcube/roundcubemail/issues/5782))
+
 ## RELEASE 1.3-rc
 
  * "Flattened" the larry theme: fresher look by removing shadows and gradients
