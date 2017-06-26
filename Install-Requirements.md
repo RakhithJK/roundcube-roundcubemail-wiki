@@ -1,11 +1,11 @@
 ## Server Requirements
 
-(for stable version 1.2)
+(for stable version 1.3)
 
  * Apache, Lighttpd, Cherokee, Hiawatha or Nginx web server
  * Directory on the Web server allowed to run scripts
  * If using Apache, .htaccess support or configuration to override DirectoryIndex
- * PHP version 5.3.7 or greater with
+ * PHP version 5.4.1 or greater with
     * PCRE (Perl-Compatible Regular Expressions)
     * DOM
     * JSON
@@ -22,11 +22,11 @@
  * PEAR packages distributed with Roundcube or external:
    * Mail_Mime 1.10.0 or newer
    * Net_SMTP 1.7.1 or newer
-   * Net_Socket 1.0.12 or newer
+   * Net_Socket 1.2.1 or newer
    * Net_IDNA2 0.1.1 or newer
-   * Auth_SASL 1.0.6 or newer
-   * Net_Sieve 1.5.0 or newer (for managesieve plugin)
-   * Crypt_GPG 1.4.1 or newer (for enigma plugin)
+   * Auth_SASL 1.1.0 or newer
+   * Net_Sieve 1.4.0 or newer (for managesieve plugin)
+   * Crypt_GPG 1.6.1 or newer (for enigma plugin)
    * Net_LDAP2 2.2.0 or newer (for LDAP address books)
    * [kolab/Net_LDAP3](https://git.kolab.org/diffusion/PNL/php-net_ldap.git) dev-master (for LDAP address books)
  * php.ini options:
@@ -38,19 +38,23 @@
     * mbstring.func_overload disabled
     * magic_quotes_runtime disabled
     * magic_quotes_sybase disabled
-    * register_globals disabled (PHP < 5.4)
  * If using MySQL or PostgreSQL, a database server and database user with permission to create tables
  * An IMAP server which supports IMAP 4 rev 1
  * An SMTP server (recommended) or PHP configured for mail delivery
 
-## Browser Requirements
 
- * JavaScript enabled
- * Accept cookies
- * Support for XMLHttpRequest
- * CSS2 Support
+## Supported browsers (version 1.3.x)
 
-## Tested browsers
+ * Internet Explorer 10 (Windows 7)
+ * Internet Explorer 11 (Windows 8)
+ * Microsoft Edge (Windows 10)
+ * Safari 9+ (Mac OS X)
+ * Firefox 3.6 (Windows XP, Linux) - _requires legacy_browser plugin since Roundcube 1.1_
+ * Firefox 30 (Windows, Mac OS X, Linux)
+ * Google Chrome 52 (Mac OS X, Windows, Linux)
+
+
+## Tested browsers (version 1.2.x)
 
  * Internet Explorer 10 (Windows 8)
  * Internet Explorer 9 (Windows 7)
@@ -60,12 +64,3 @@
  * Firefox 3.6 (Windows XP, Linux) - _requires legacy_browser plugin since Roundcube 1.1_
  * Firefox 4+ (Windows, Linux)
  * Google Chrome 9+ (Mac OS X, Windows 7, Linux)
-
-## Browsers reported to work
-
- * Camino 1.5.x (Mac OS X 10.4)
- * Opera 9.25 (Windows Server 2003, Windows XP, and FreeBSD 6)
- * Opera 9.30 (Wii, TinyMCE is non-functional)
- * Opera 9.60 (Windows XP)
- * Opera 11.x (Windows XP/7, Mac OS X)
- * SeaMonkey v2.8 (Windows XP/7, Linux)
