@@ -6,7 +6,7 @@ So you've read up on what Roundcube is, and what it can do.  But of course, you 
 
 ### Other tutorials
 
-There's a nice [how-to](http://www.hmailserver.com/forum/viewtopic.php?t=5591) about the installation of Roundcube on a Windows box with IIS6 and hMailServer. *NOTE:* Make sure you set temp_dir in main.inc.php to an absolute path as otherwise users may run into issues with attaching files to emails.
+There's a nice [how-to](http://www.hmailserver.com/forum/viewtopic.php?t=5591) about the installation of Roundcube on a Windows box with IIS6 and hMailServer. *NOTE:* Make sure you set temp_dir in config.inc.php to an absolute path as otherwise users may run into issues with attaching files to emails.
 
 ## Installation
 
@@ -120,10 +120,10 @@ This shell script is written for CentOS/RHEL and assumes Apache is installed in 
 
 ### Debian
 
-This shell script is written for Debian with MySQL, SMTP and IMAP servers running on the localhost (SSL/TLS enabled and unauthenticated SMTP allowed from localhost). It will set up roundcube-1.1.0 in a virtual host accessible by `roundcube.yourdomain.tld`.
+This shell script is written for Debian with MySQL, SMTP and IMAP servers running on the localhost (SSL/TLS enabled and unauthenticated SMTP allowed from localhost). It will set up roundcube-1.3.0 in a virtual host accessible by `roundcube.yourdomain.tld`.
 
 The script will:
- * download and extract roundube-1.1.0
+ * download and extract roundube-1.3.0
  * make /temp and /logs writable by the webserver
  * create an apache-site configuration (virtualhost)
  * create a mysql user and database
@@ -142,10 +142,10 @@ Install php5:
 ```
 # apt-get install php5 php-pear php5-mysql
 ```
-Install php5-mcrypt and mhp5-intl (as recommended in the installation instructions):
+Install mhp5-intl (as recommended in the installation instructions):
 
 ```
-# apt-get install php5-mcrypt php5-intl
+# apt-get install php5-intl
 ```
 
 Set default time zone in php.ini (examples: `UTC`, `Europe/Zurich`, or see the [PHP Manual](http://php.net/manual/en/timezones.php) for more):
