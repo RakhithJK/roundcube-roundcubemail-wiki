@@ -58,6 +58,9 @@
 
  * Internet Explorer 10 (Windows 8)
  * Internet Explorer 9 (Windows 7)
+ * Internet Explorer 8 (Windows XP/7) - requires legacy_browser plugin since Roundcube 1.1
+ * Internet Explorer 7 (Windows XP) - requires legacy_browser plugin since Roundcube 1.1
  * Safari 3+ (Mac OS X 10.5 and Windows XP)
+ * Firefox 3.6 (Windows XP, Linux) - requires legacy_browser plugin since Roundcube 1.1
  * Firefox 4+ (Windows, Linux)
  * Google Chrome 9+ (Mac OS X, Windows 7, Linux)
