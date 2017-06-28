@@ -49,18 +49,15 @@
  * Internet Explorer 11 (Windows 8)
  * Microsoft Edge (Windows 10)
  * Safari 9+ (Mac OS X)
- * Firefox 3.6 (Windows XP, Linux) - _requires legacy_browser plugin since Roundcube 1.1_
- * Firefox 30 (Windows, Mac OS X, Linux)
- * Google Chrome 52 (Mac OS X, Windows, Linux)
+ * Firefox 4+ (Windows XP, Linux)
+ * Firefox 30+ (Windows, Mac OS X, Linux)
+ * Google Chrome 52+ (Mac OS X, Windows, Linux)
 
 
 ## Tested browsers (version 1.2.x)
 
  * Internet Explorer 10 (Windows 8)
  * Internet Explorer 9 (Windows 7)
- * Internet Explorer 8 (Windows XP/7) - _requires legacy_browser plugin since Roundcube 1.1_
- * Internet Explorer 7 (Windows XP) - _requires legacy_browser plugin since Roundcube 1.1_
  * Safari 3+ (Mac OS X 10.5 and Windows XP)
- * Firefox 3.6 (Windows XP, Linux) - _requires legacy_browser plugin since Roundcube 1.1_
  * Firefox 4+ (Windows, Linux)
  * Google Chrome 9+ (Mac OS X, Windows 7, Linux)
