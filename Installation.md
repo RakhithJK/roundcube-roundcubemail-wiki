@@ -154,3 +154,5 @@ sed -i -e "s/^;date\.timezone =.*$/date\.timezone = 'UTC'/" /etc/php5/apache2/ph
 ```
 
 Run the script [debian_install_mysql.sh](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-debian_install_mysql-sh)​, also available for postgresql: [debian_install_postgres.sh​](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-debian_install_postgres-sh)
+
+Warning! These scripts may be out-of-date!
