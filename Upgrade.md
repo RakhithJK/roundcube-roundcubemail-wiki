@@ -26,7 +26,7 @@ tar xf roundcubemail-*.tar.gz
 ### Update your existing Roundcube installation
 
 * package `rsync` is required, used to copy new Roundcube files to existing Roundcube installation.
-* php function `system` must be NOT disabled in `php.ini` parameter `disable_functions`, so that our script can call `rsync` command to copy files.
+* php function `system` must be NOT disabled in `php.ini` parameter `disable_functions`, so that our script can call `rsync` command to copy files. It's recommended to disable `system` function after upgraded Roundcube.
 * SQL user used for Roundcube db connection must have required privileges to update SQL tables in Roundcube db.
 
 The easiest way to do this is to use the `installto.sh` shell script bundled with Roundcube.
