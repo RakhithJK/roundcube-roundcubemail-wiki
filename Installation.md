@@ -14,7 +14,7 @@ There's a nice [how-to](http://www.hmailserver.com/forum/viewtopic.php?t=5591) a
 
 To get started, you need to download Roundcube. The easiest way to get it is to visit http://www.roundcube.net and click on "Downloads".  Download the archive file containing Roundcube (name should end in `.tar.gz`) and extract its contents (on Windows, with WinZip or 7-Zip, on Mac/Unix with `tar xfz roundcubemail-xx.tar.gz` or `gunzip -c roundcube-xx.tar.gz | tar xf -`) in the current directory.
 
-### Install dependecies
+### Install dependencies
 
 If you didn't download the "complete" package, 3rd party libraries still need to be installed or updated for your Roundcube installation. This is done using [Composer](https://getcomposer.org):
 
