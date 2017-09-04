@@ -1,5 +1,31 @@
 # CHANGELOG
 
+## RELEASE 1.3.1
+
+
+ * Add Preferences > Mailbox View > Main Options > Layout ([#5829](/roundcube/roundcubemail/issues/5829))
+ * Password: Fix compatibility with PHP 7+ in cpanel_webmail driver ([#5820](/roundcube/roundcubemail/issues/5820))
+ * Managesieve: Fix parsing dot-staffed lines in multiline text ([#5838](/roundcube/roundcubemail/issues/5838))
+ * Managesieve: Fix AM/PM suffix in vacation time selectors
+ * Managesieve: Fix bug where 'exists' operator was reset to 'contains' ([#5899](/roundcube/roundcubemail/issues/5899))
+ * Remove non-printable characters from filenames on download/display ([#5880](/roundcube/roundcubemail/issues/5880))
+ * Fix decoding non-ascii attachment names from TNEF attachments ([#5646](/roundcube/roundcubemail/issues/5646), [#5799](/roundcube/roundcubemail/issues/5799))
+ * Fix uninitialized string offset warnings and make sure `random_bytes()` has the requested length ([#5788](/roundcube/roundcubemail/issues/5788))
+ * Fix bug where HTML messages with @media styles could moddify style of page body ([#5811](/roundcube/roundcubemail/issues/5811))
+ * Fix style issue on selected and unfocused message that is part of a thread ([#5798](/roundcube/roundcubemail/issues/5798))
+ * Fix bug where a.button style from managesieve plugin could impact other elements ([#5800](/roundcube/roundcubemail/issues/5800))
+ * Fix position of selected icon for (Mailvelope) Encrypt button
+ * Fix fatal error when using DMY- or MDY-based date format in PostgreSQL ([#5808](/roundcube/roundcubemail/issues/5808))
+ * Fix bug where errors were not printed when using `bin/update.sh` ([#5834](/roundcube/roundcubemail/issues/5834))
+ * Fix PHP 7.2 warnings on `count()` use ([#5845](/roundcube/roundcubemail/issues/5845))
+ * Fix bug where Chrome could not upload the same file that was selected before ([#5854](/roundcube/roundcubemail/issues/5854))
+ * Fix duplicate messages on the list after deleting messages on the next to the last page ([#5862](/roundcube/roundcubemail/issues/5862))
+ * Fix bug where messages count was not updated after delete when imap_cache is set ([#5872](/roundcube/roundcubemail/issues/5872))
+ * Fix potential XSS vulnerability with malformed HTML message markup
+ * Fix sending message with "Too many public recipients" dialog buttons ([#5924](/roundcube/roundcubemail/issues/5924))
+ * Bring back double-click behavior on the message list which was removed in 1.3.0 ([#5823](/roundcube/roundcubemail/issues/5823))
+ * Enigma: Fix decrypting an encrypted+signed message when signature verification fails ([#5914](/roundcube/roundcubemail/issues/5914))
+
 ## RELEASE 1.3.0
 
  * Update to TinyMCE 4.5.7
