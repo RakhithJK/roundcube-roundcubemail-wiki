@@ -40,7 +40,7 @@
     * magic_quotes_sybase disabled
  * If using MySQL or PostgreSQL, a database server and database user with permission to create tables
  * An IMAP server which supports IMAP 4 rev 1
- * An SMTP server (recommended) or PHP configured for mail delivery
+ * An SMTP server
 
 
 ## Supported browsers (version 1.3.x)
