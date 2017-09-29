@@ -1,6 +1,6 @@
 # Build Roundcube from Source
 
-Building Roundcube from source is pretty similar to [[Creating a new release]].  
+Building Roundcube from source is pretty similar to [[Dev Releases]].  
 Let's list the individual steps with a short description:
 
 #### 1. Fetch the source from github
