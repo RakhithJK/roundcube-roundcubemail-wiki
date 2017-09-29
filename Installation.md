@@ -114,7 +114,7 @@ Have fun with your new Roundcube installation!!
 
 ### CentOS/RHEL
 
-This shell script is written for CentOS/RHEL and assumes Apache is installed in a default way, with your MySQL, SMTP and IMAP servers running on the localhost. You will also need to install wget (yum install -y wget) if you haven't already.  Once the script is finished, you can access roundcube by `http://{your_web_server}/roundcube` or `http://{your_web_server}/webmail? .
+This shell script is written for CentOS/RHEL and assumes Apache is installed in a default way, with your MySQL, SMTP and IMAP servers running on the localhost. You will also need to install wget (yum install -y wget) if you haven't already.  Once the script is finished, you can access roundcube by `http://{your_web_server}/roundcube` or `http://{your_web_server}/webmail`.
 
 [centos_rhel_install.sh​](https://gist.github.com/rcubetrac/cc85589b837d58680a86e7b5cbb09a4f#file-centos_rhel_install-sh)
 
