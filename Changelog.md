@@ -1,7 +1,28 @@
 # CHANGELOG
 
-## RELEASE 1.3.1
+## RELEASE 1.3.2
 
+
+ * Improve detection for Egde browser and add pointer event support ([#5922](/roundcube/roundcubemail/issues/5922))
+ * Fix bug where pink image was used instead of a thumbnail when image resize fails ([#5933](/roundcube/roundcubemail/issues/5933))
+ * Fix so files size/count limit is verified (client-side) also on drag-n-drop uploads ([#5940](/roundcube/roundcubemail/issues/5940))
+ * Fix invalid template loading on a message error in preview frame ([#5941](/roundcube/roundcubemail/issues/5941))
+ * Fix bug where HTML messages could have been rendered empty on some systems ([#5957](/roundcube/roundcubemail/issues/5957))
+ * Fix wording of "Mark previewed messages as read" to "Mark messages as read" ([#5952](/roundcube/roundcubemail/issues/5952))
+ * Enigma: Fix decryption of messages encoded with non-ascii charset ([#5962](/roundcube/roundcubemail/issues/5962))
+ * Fix missing cursor in HTML editor on mail reply ([#5969](/roundcube/roundcubemail/issues/5969))
+ * Fix (again) bug where image data URIs in css style were treated as evil/remote in mail preview ([#5580](/roundcube/roundcubemail/issues/5580))
+ * Fix bug where mail search could return empty result on servers without SORT capability ([#5973](/roundcube/roundcubemail/issues/5973))
+ * Fix bug where assets_path wasn't added to some watermark frames
+ * Fix so untagged COPYUID responses are also supported according to RFC6851 ([#5982](/roundcube/roundcubemail/issues/5982))
+ * Fix issue caused by non-default session.cookie_lifetime setting ([#5961](/roundcube/roundcubemail/issues/5961))
+ * Fix Edge encoding bug when pasting text into the HTML editor, update to TinyMCE 4.5.8 ([#5885](/roundcube/roundcubemail/issues/5885))
+ * Fix handling of unknown Content-Disposition type ([#6002](/roundcube/roundcubemail/issues/6002))
+ * Fix truncated folder name on messages list in multi-folder mode, for folders with non-ascii characters ([#6004](/roundcube/roundcubemail/issues/6004))
+ * Fix bug where removing the last subfolder did not hide toggle button on its parent record ([#6007](/roundcube/roundcubemail/issues/6007))
+ * Fix bug where ghost messages could be added to the list after fast delete ([#5941](/roundcube/roundcubemail/issues/5941))
+
+## RELEASE 1.3.1
 
  * Add Preferences > Mailbox View > Main Options > Layout ([#5829](/roundcube/roundcubemail/issues/5829))
  * Password: Fix compatibility with PHP 7+ in cpanel_webmail driver ([#5820](/roundcube/roundcubemail/issues/5820))
