@@ -1,7 +1,13 @@
 # CHANGELOG
 
-## RELEASE 1.3.2
+## RELEASE 1.3.3
 
+- Fix decoding of mailto: links with + character in HTML messages ([#6020](/roundcube/roundcubemail/issues/6020))
+- Fix false reporting of failed upgrade in `installto.sh` ([#6019](/roundcube/roundcubemail/issues/6019))
+- Fix file disclosure vulnerability caused by insufficient input validation [CVE-2017-16651] ([#6026](/roundcube/roundcubemail/issues/6026))
+- Fix mangled non-ASCII characters in links in HTML messages ([#6028](/roundcube/roundcubemail/issues/6028))
+
+## RELEASE 1.3.2
 
  * Improve detection for Egde browser and add pointer event support ([#5922](/roundcube/roundcubemail/issues/5922))
  * Fix bug where pink image was used instead of a thumbnail when image resize fails ([#5933](/roundcube/roundcubemail/issues/5933))
