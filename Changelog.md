@@ -1,5 +1,23 @@
 # CHANGELOG
 
+## RELEASE 1.3.4
+
+
+ * Fix a couple of warnings on PHP 7.2 ([#6098](/roundcube/roundcubemail/issues/6098))
+ * Fix bug where contacts search could skip some records ([#6130](/roundcube/roundcubemail/issues/6130))
+ * Fix possible information leak - add more strict sql error check on user creation ([#6125](/roundcube/roundcubemail/issues/6125))
+ * Fix broken long filenames when using imap4d server - workaround server bug ([#6048](/roundcube/roundcubemail/issues/6048))
+ * Fix so temp_dir misconfiguration prints an error to the log ([#6045](/roundcube/roundcubemail/issues/6045))
+ * Fix untagged COPYUID responses handling - again ([#5982](/roundcube/roundcubemail/issues/5982))
+ * Fix PHP warning "idn_to_utf8(): INTL_IDNA_VARIANT_2003 is deprecated" with PHP 7.2 ([#6075](/roundcube/roundcubemail/issues/6075))
+ * Fix bug where Archive folder wasn't auto-created on login with create_default_folders=true
+ * Fix performance issue when parsing malformed and long Date header ([#6087](/roundcube/roundcubemail/issues/6087))
+ * Fix syntax error in mssql.initial.sql ([#6097](/roundcube/roundcubemail/issues/6097))
+ * Fix bug where contacts export by selection returned no more than 10 entries ([#6103](/roundcube/roundcubemail/issues/6103))
+ * Fix searching contacts by address in LDAP source ([#6084](/roundcube/roundcubemail/issues/6084))
+ * Fix X-Frame-Options: ALLOW-FROM support, remove custom click-jacking protection ([#6057](/roundcube/roundcubemail/issues/6057))
+
+
 ## RELEASE 1.3.3
 
 - Fix decoding of mailto: links with + character in HTML messages ([#6020](/roundcube/roundcubemail/issues/6020))
