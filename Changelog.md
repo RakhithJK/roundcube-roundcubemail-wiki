@@ -1,7 +1,18 @@
 # CHANGELOG
 
-## RELEASE 1.3.4
+## RELEASE 1.3.5
 
+ * Managesieve: Fix bug where text: syntax was forced for strings longer than 1024 characters ([#6143](/roundcube/roundcubemail/issues/6143))
+ * Managesieve: Fix missing Save button in Edit Filter Set page of Classic skin ([#6154](/roundcube/roundcubemail/issues/6154))
+ * Fix duplicated labels in Test SMTP Config section ([#6166](/roundcube/roundcubemail/issues/6166))
+ * Fix PHP Warning: exif_read_data(...): Illegal IFD size ([#6169](/roundcube/roundcubemail/issues/6169))
+ * Enigma: Fix key generation in Safari by upgrade to OpenPGP 2.6.2 ([#6149](/roundcube/roundcubemail/issues/6149))
+ * Fix security issue in remote content blocking on HTML image and style tags ([#6178](/roundcube/roundcubemail/issues/6178))
+ * Added 9pt and 11pt to the list of font sizes in HTML editor
+ * Fix handling encoding of HTML tags in "inline" JSON output ([#6207](/roundcube/roundcubemail/issues/6207))
+ * Fix bug where some unix timestamps were not handled correctly by rcube_utils::anytodatetime() ([#6212](/roundcube/roundcubemail/issues/6212))
+
+## RELEASE 1.3.4
 
  * Fix a couple of warnings on PHP 7.2 ([#6098](/roundcube/roundcubemail/issues/6098))
  * Fix bug where contacts search could skip some records ([#6130](/roundcube/roundcubemail/issues/6130))
