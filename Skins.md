@@ -83,7 +83,7 @@ This basically adds the base skin folder to the search path for templates and as
 
 ## The template engine
 
-All templates are pure XHTML files and contain special tags of the form `<roundcube: .../>` which are parsed and replaced with the according content. Using these special tags you can also include other template files and make conditional blocks. The syntax and a detailed list of available tags is described on the [Skin Markup Language](Doc_SkinML/) page.
+All templates are pure XHTML files and contain special tags of the form `<roundcube: .../>` which are parsed and replaced with the according content. Using these special tags you can also include other template files and make conditional blocks. The syntax and a detailed list of available tags is described on the [[Skin Markup]] page.
 
 If enabled by configuration (`$rcmail_config['skin_include_php']`) also PHP code within templates is executed. All references like images, stylesheets and included files must be defined with absolute paths (starting with /) where / is the root of the skin subfolder.
 
