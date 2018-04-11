@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## RELEASE 1.3.6
+
+ * Fix parsing date strings (e.g. from a Date: mail header) with comments ([#6216](/roundcube/roundcubemail/issues/6216))
+ * Fix PHP 7.2: count(): Parameter must be an array in enchant-based spellchecker ([#6234](/roundcube/roundcubemail/issues/6234))
+ * Fix possible IMAP command injection and type juggling vulnerabilities ([#6229](/roundcube/roundcubemail/issues/6229))
+ * Enigma: Fix key selection for signing
+ * Enigma: Enable keypair generation on Internet Explorer 11
+ * Fix `check_request()` bypass in places using `get_uids()` [CVE-2018-9846](https://www.cvedetails.com/cve/CVE-2018-9846/) ([#6238](/roundcube/roundcubemail/issues/6238))
+ * Fix bug where usernames without domain part could be malformed or converted to lower-case on logon ([#6224](/roundcube/roundcubemail/issues/6224))
+
+
 ## RELEASE 1.3.5
 
  * Managesieve: Fix bug where text: syntax was forced for strings longer than 1024 characters ([#6143](/roundcube/roundcubemail/issues/6143))
