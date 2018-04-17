@@ -110,7 +110,7 @@ Similar to `message.html` but used for the inline display of a message within th
 
 This template is used to render the frame to display a message attachment. It mainly contains an object where the actual attachment is loaded into as well as a download link.
 
-### printmessage.html
+### messageprint.html
 
 When opening a mail message for printing this template is loaded. It should include some stylesheets optimized for printing and no navigation elements. It will be opened in a new window and might provide a link to close it.
 
