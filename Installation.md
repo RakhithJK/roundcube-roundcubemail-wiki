@@ -65,7 +65,7 @@ Note that preconfigured database tables are included in the SQL folder. Import o
 
 ### PHP Configuration
 
-As any other PHP application some aspects depend on PHP settings. You can use php.ini or .htaccess file in a usual way. Roundcube when running will check most critical settings, try to set them and let you know if something's wrong. Here's a minimal list of settings that you might need to use (with suggested value):
+As any other PHP application some of its aspects depend on PHP settings. You should use php.ini or .htaccess (Apache module) or .user.ini (CGI/FastCGI SAPI) depending on your server setup. Roundcube when running will check most critical settings, try to set them and let you know if something's wrong. Here's a minimal list of settings that you might need to use (with suggested value):
 
 * Memory limit: `memory_limit=64M`,
 * Options that control logging: `display_errors=Off`, `log_errors=On`, `error_log=logs/errors.log`,
