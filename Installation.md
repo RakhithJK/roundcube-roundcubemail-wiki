@@ -63,6 +63,16 @@ FLUSH PRIVILEGES;
 ```
 Note that preconfigured database tables are included in the SQL folder. Import or restore your version or you may get a 500 Error.
 
+### PHP Configuration
+
+As any other PHP application some aspects depend on PHP settings. You can use php.ini or .htaccess file in a usual way. Roundcube when running will check most critical settings, try to set them and let you know if something's wrong. Here's a minimal list of settings that you might need to use (with suggested value):
+
+* Memory limit: `memory_limit=64M`,
+* Options that control logging: `display_errors=Off`, `log_errors=On`, `error_log=logs/errors.log`,
+* Options that control file uploads (e.g. max attachment size): `upload_max_filesize=5M`, `post_max_size=6M`,
+* Options that are not compatible with Roundcube: `zlib.output_compression=Off`, `suhosin.session.encrypt=Off`, `session.auto_start=Off`,
+* Options that control session behaviour: `session.gc_maxlifetime=21600`, `session.gc_divisor=500`, `session.gc_probability=1`.
+
 ### Configuring Roundcube
 
 After uploading the files point your browser to `http://url-to-roundcube/installer/` to start the install wizard.
