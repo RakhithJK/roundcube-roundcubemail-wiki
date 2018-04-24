@@ -1,5 +1,9 @@
 # Frequently Asked Questions
 
+## How to export multiple email messages at once?
+
+It is possible with zipdownload plugin. With the plugin enabled and its `zipdownload_selection` option configured, you will be able to download multiple selected messages in one archive file. A new More > Download menu will contain three new options. Note that maximum size of the archive can be specified in configuration.
+
 ## "server certificate verification failed" on Composer install
 
 This error can appear when installing Roundcube's dependencies via Composer, including the `kolab/Net_LDAP3` package from git.kolab.org.
