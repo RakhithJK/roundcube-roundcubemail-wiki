@@ -14,7 +14,7 @@ As the last step of processing a request from the client the template engine of 
 
 Within the skin subfolder all templates are read from the subfolder `templates/` and their file names are hard-coded. All other files are individual and are referenced from the templates and therefore can be named individually. Roundcube is shipped with a default skin (`skins/larry/` which is worth a look in order to see what a complete skin is made of.
 
-This is the least structure a skin should provide:
+This is the least structure a skin should provide (for list of templates see existing core skins):
 
 ```
   skins/<skinname>/
@@ -23,29 +23,7 @@ This is the least structure a skin should provide:
     styles.css
     images/
     templates/
-      about.html
-      addressbook.html
-      compose.html
-      contact.html
-      contactadd.html
-      contactedit.html
-      contactsearch.html
-      error.html
-      folders.html
-      folderedit.html
-      identities.html
-      identityedit.html
-      importcontacts.html
-      login.html
-      mail.html
-      message.html
-      messageerror.html
-      messagepart.html
-      messagepreview.html
-      messageprint.html
-      plugin.html
-      settings.html
-      settingsedit.html
+      about.html [...]
 ```
 
 ## meta.json
@@ -59,9 +37,12 @@ This file contains some meta information about the skin which are displayed, tog
   "author": "<the skin author's name>",
   "url": "<link to author's website>",
   "license": "<skin license, e.g. Creative Commons, BSD, GPL>",
-  "license-url": "<link to license text>"
+  "license-url": "<link to license text>",
+  "localization": true,
+  "config": []
 }
 ```
+`localization` tells Roundcube that it should read localization files from `localization/` in the skin directory. If your skin does not need additional translation labels just set it to `false`. Skins should use the same localization files structure and format used by plugins system. With `config` entry you can set (and force) any configuration options.
 
 ## Extending skins
 
