@@ -30,6 +30,8 @@ If you didn't download the "complete" package, 3rd party libraries still need to
 ```  
   4. run `php composer.phar install --no-dev`
 
+You also have to download JavaScript dependencies by running `bin/install-jsdeps.sh` from Roundcube root directory.
+
 > Please note that this requires shell access to the webserver. If you don't have that,
 > download the "complete" package and copy the `vendor` directory into the Roundcube
 > installation directory. That already contains all the dependencies you'd otherwise
