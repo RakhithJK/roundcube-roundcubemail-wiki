@@ -599,7 +599,7 @@ Triggered before message is finally sent
 _Arguments:_
   * message: _Message object (Mail_mime)_
   * from: _Sender address string_
-  * mailto: _Array of recipients_
+  * mailto: _Either a comma-separated list of recipients (RFC822 compliant), or an array of recipients, each RFC822 valid_
   * options: _SMTP options_
 
 _Return values:_
