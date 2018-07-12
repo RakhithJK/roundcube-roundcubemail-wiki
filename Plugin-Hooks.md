@@ -536,7 +536,7 @@ _Return values:_
 
 ### message_outgoing_headers
 
-(deprecated, use [#message_before_send message_before_send] or [#message_ready message_ready] hooks instead)
+(deprecated, use [message_before_send](#message_before_send) or [message_ready](#message_ready) hooks instead)
 
 Before a mail message is sent, this hooks allows you to set additional mail headers.
 
@@ -913,7 +913,7 @@ _Return values:_
 (since 1.0-beta)
 
 Hook to render the top level list of settings sections (aka "tabs").
-Plugins which want to define a new section in the settings screen should use this hook instead of injecting a new item with javascript or using the "tabs" [[#template_container]] hook.
+Plugins which want to define a new section in the settings screen should use this hook instead of injecting a new item with javascript or using the "tabs" in [template_container](#template_container) hook.
 Just append the following struct to the _actions_ argument:
 
     array(
