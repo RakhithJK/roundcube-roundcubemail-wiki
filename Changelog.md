@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## RELEASE 1.3.7
+
+- Fix PHP Warning: Use of undefined constant IDNA_DEFAULT on systems without php-intl ([#6244](/roundcube/roundcubemail/issues/6244))
+- Fix bug where some parts of quota information could have been ignored ([#6280](/roundcube/roundcubemail/issues/6280))
+- Fix bug where some escape sequences in html styles could bypass security checks
+- Fix bug where some forbidden characters on Cyrus-IMAP were not prevented from use in folder names
+- Fix bug where only attachments with the same name would be ignored on zip download ([#6301](/roundcube/roundcubemail/issues/6301))
+- Fix bug where unicode contact names could have been broken/emptied or caused DB errors ([#6299](/roundcube/roundcubemail/issues/6299))
+- Fix bug where after "mark all folders as read" action message counters were not reset ([#6307](/roundcube/roundcubemail/issues/6307))
+- Enigma: [EFAIL] Don't decrypt PGP messages with no MDC protection ([#6289](/roundcube/roundcubemail/issues/6289))
+- Fix bug where some HTML comments could have been malformed by HTML parser ([#6333](/roundcube/roundcubemail/issues/6333))
+
 ## RELEASE 1.3.6
 
  * Fix parsing date strings (e.g. from a Date: mail header) with comments ([#6216](/roundcube/roundcubemail/issues/6216))
