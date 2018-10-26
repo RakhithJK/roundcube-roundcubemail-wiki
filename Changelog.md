@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## RELEASE 1.3.8
+
+- Fix PHP warnings on dummy QUOTA responses in Courier-IMAP 4.17.1 ([#6374](/roundcube/roundcubemail/issues/6374))
+- Fix so fallback from BINARY to BODY FETCH is used also on [PARSE] errors in dovecot 2.3 (#[6383](/roundcube/roundcubemail/issues/6383))
+- Enigma: Fix deleting keys with authentication subkeys (#[6381](/roundcube/roundcubemail/issues/6381))
+- Fix invalid regular expressions that throw warnings on PHP 7.3 (#[6398](/roundcube/roundcubemail/issues/6398))
+- Fix so Classic skin splitter does not escape out of window (#[6397](/roundcube/roundcubemail/issues/6397))
+- Fix XSS issue in handling invalid style tag content (#[6410](/roundcube/roundcubemail/issues/6410))
+- Fix compatibility with MySQL 8 - error on 'system' table use
+- Managesieve: Fix bug where `show_real_foldernames` setting wasn't respected (#[6422](/roundcube/roundcubemail/issues/6422))
+- New_user_identity: Fix `%fu`/`%u` vars substitution in user specific LDAP params (#[6419](/roundcube/roundcubemail/issues/6419))
+- Fix support for "allow-from <uri>" in `x_frame_options` config option (#[6449](/roundcube/roundcubemail/issues/6449))
+- Fix bug where valid content between HTML comments could have been skipped in some cases (#[6464](/roundcube/roundcubemail/issues/6464))
+- Fix multiple VCard field search (#[6466](/roundcube/roundcubemail/issues/6466))
+- Fix session issue on long running requests (#[6470](/roundcube/roundcubemail/issues/6470))
+
 ## RELEASE 1.3.7
 
 - Fix PHP Warning: Use of undefined constant IDNA_DEFAULT on systems without php-intl ([#6244](/roundcube/roundcubemail/issues/6244))
