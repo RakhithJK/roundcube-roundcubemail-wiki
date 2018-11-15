@@ -1,1 +1,0 @@
-how can i fix port 25 issue with postfix, My ISP is blocking port 25 which got me in trouble with my inbound outbound email. I configured port 587 but still not gonna work, when i send outbound email it use port 25 bydefault then do not let me out of my ISP router.. 
