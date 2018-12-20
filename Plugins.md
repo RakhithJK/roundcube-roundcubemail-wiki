@@ -1,19 +1,21 @@
 Roundcube Mail comes with many useful plugins, which extend its functionality. There are also many third-party plugins, which can be found at [Roundcube Plugins](https://plugins.roundcube.net/).
 
 ### Default Plugins
-| Name                       | Description |
-| -------------------------- | ----------- |
-| acl                        ||
-| additional_message_headers ||
-| archive                    ||
-| attachment_reminder        ||
-| autologon                  ||
-| database_attachments       ||
-| debug_logger               ||
-| emoticons                  ||
-| enigma                     ||
-| example_addressbook        ||
-| filesystem_attachments     ||
+Below is a table of the names and descriptions of the default plugins, which can be found [here](https://github.com/roundcube/roundcubemail/tree/master/plugins).
+
+| Name                       | Description                                                            |
+| -------------------------- | ---------------------------------------------------------------------- |
+| acl                        | Allows mailbox access control lists to be managed                      |
+| additional_message_headers | Adds additional or removes headers from outgoing mail                  |
+| archive                    | Adds a button that lets a user move mail to a specified archive folder |
+| attachment_reminder        | Reminds a user to attach files to their email                          |
+| autologon                  | Performs an automatic login if accessed from `localhost`               |
+| database_attachments       | Provides database-backed storage for temporary attachment handling     |
+| debug_logger               | Enhances logging for debugging purposes                                |
+| emoticons                  | Replaces emoticons in plain-text messages with real icons              |
+| enigma                     | Adds support for viewing and sending PGP signed/encrypted mail         |
+| example_addressbook        | Sample plugin that implements a hard-coded list of contacts            |
+| filesystem_attachments     | Adds basic, filesystem-based temporary attachment handling             |
 | help                       ||
 | hide_blockquote            ||
 | http_authentication        ||
