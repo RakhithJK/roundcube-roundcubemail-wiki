@@ -14,6 +14,20 @@ The plugin is already shipped with the Roundcube packages but not enabled by def
    1. Copy the plugin config file `plugins/zipdownload/config.inc.php.dist` into `config/zipdownload.inc.php`
    2. Edit the copied file and set `$config['zipdownload_selection'] = true;`
 
+## There's no option to change my password
+
+Password changing is highly dependent on the email server used behind Roundcube. Roundcube itself doesn't store passwords but authenticates at the email server upon each login. Therefore, Roundcube doesn't provide that function with the default setup. It does, however, provide a plugin with a variety of drivers for commonly used email storage systems.
+
+### Enable and configure the `password` plugin
+
+The plugin is already shipped with the Roundcube packages but not enabled by default because it requires manual configuration.
+
+1. [Enable the plugin](/roundcube/roundcubemail/wiki/Plugin-API#installing-and-activating-plugins) by adding "password" to the list of plugins in Roundcube's `config/config.inc.php` file.
+2. Copy the file `config.inc.php.dist` to `config.inc.php` inside the `plugins/password` directory.
+3. Read the plugin's [README](https://github.com/roundcube/roundcubemail/tree/master/plugins/password) file and configure the plugin according to your email server environment and capabilities.
+
+> If you don't understand the above instructions, please contact your email hosting provider who runs your Roundcube webmail and ask them to enable the password plugin.
+
 
 ## "server certificate verification failed" on Composer install
 
