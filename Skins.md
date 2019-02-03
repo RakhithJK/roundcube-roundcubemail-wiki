@@ -39,10 +39,54 @@ This file contains some meta information about the skin which are displayed, tog
   "license": "<skin license, e.g. Creative Commons, BSD, GPL>",
   "license-url": "<link to license text>",
   "localization": true,
-  "config": []
+  "config": [],
+  "meta": {},
+  "links": {}
 }
 ```
-`localization` tells Roundcube that it should read localization files from `localization/` in the skin directory. If your skin does not need additional translation labels just set it to `false`. Skins should use the same localization files structure and format used by plugins system. With `config` entry you can set (and force) any configuration options.
+* `localization` - tells Roundcube that it should read localization files from `localization/` in the skin directory. If your skin does not need additional translation labels just set it to `false`. Skins should use the same localization files structure and format used by plugins system.
+* `config` - allows you can set (and force) any configuration options.
+* `meta` - (Added in 1.4) a JSON object of meta tags to be inserted into the `meta` template object e.g.
+```
+...
+"meta": {
+  "<name>": "<content>",
+  "viewport": "width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0"
+  "theme-color": "#ffffff",
+},
+...
+```
+you can define additonal parameters for the meta tag as follows:
+```
+...
+"<name>": {"content": "<content>", "id": "<id>"},
+...
+```
+you can define multiple tags with the same name as follows:
+```
+...
+"<name>": [{"content": "<content>", "id": "<id>"}, "<content>"],
+...
+```
+* `links` - (Added in 1.4) a JSON object of link tags to be inserted into the `links` template object, the links object uses the same structure as the meta object e.g.
+```
+...
+"links": {
+  "<rel>": "<href>",
+  "apple-touch-icon": {"sizes": "180x180", "href": "/apple-touch-icon.png"},
+  "icon": [
+    {"type": "image/png", "sizes": "32x32", "href": "/favicon-32x32.png"},
+    {"type": "image/png", "sizes": "16x16", "href": "/favicon-16x16.png"}
+  ],
+  "manifest": "/site.webmanifest",
+  "mask-icon": {"href": "/safari-pinned-tab.svg", "color": "#5bbad5"},
+  "stylesheet": [
+    "/branding.css",
+    "/layout.css"
+  ]
+}
+...
+```
 
 ## Extending skins
 
@@ -60,6 +104,33 @@ This basically adds the base skin folder to the search path for templates and as
 ```
 <roundcube:include file="/includes/links.html" skinPath="skins/larry" />
 <link rel="stylesheet" type="text/css" href="/customstyles.css" />
+```
+
+Additional CSS files can also be added via the meta.json file:
+
+```
+{
+  "name": "MySkin",
+  "extends": "elastic",
+  ...
+  "links": {
+    "stylesheet": "/customstyles.css"
+  }
+}
+```
+
+**Unsetting an existing header**
+
+When extending a skin if you wish to unset a meta or link tag defined in the parent skin it can be done as follows:
+```
+{
+  "name": "MySkin",
+  "extends": "elastic",
+  ...
+  "meta": {
+    "viewport": false
+  }
+}
 ```
 
 ## The template engine
