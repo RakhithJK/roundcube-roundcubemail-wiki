@@ -106,19 +106,6 @@ This basically adds the base skin folder to the search path for templates and as
 <link rel="stylesheet" type="text/css" href="/customstyles.css" />
 ```
 
-Additional CSS files can also be added via the meta.json file:
-
-```
-{
-  "name": "MySkin",
-  "extends": "elastic",
-  ...
-  "links": {
-    "stylesheet": "/customstyles.css"
-  }
-}
-```
-
 **Unsetting an existing header**
 
 When extending a skin if you wish to unset a meta or link tag defined in the parent skin it can be done as follows:
