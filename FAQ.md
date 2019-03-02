@@ -43,3 +43,30 @@ followed by
 ```
 update-ca-certificates
 ```
+
+## Problems connecting IMAP/SMTP server via SSL/TLS
+
+Since PHP 5.6 certificate verification has been enabled by default. If you are using a self-signed (or any kind) certificate who's CA is not in your default CA bundle then you must take additional steps to enable connection to your IMAP/SMTP server(s).
+
+Symptoms of a problem with certificate verification include the message `Connection to storage server failed.` in the Roundcube interface and the message:
+
+`IMAP Error: Login failed for <user> from 111.222.333.444. Could not connect to ssl://<imap_server>:993: Unknown reason...`
+
+in your Roundcube error log.
+
+Note: The <imap_server> name you specify in `$config['default_host']` should match the Common Name (CN) of your certificate. Peer name verification is also performed by default.
+
+If you are using a self-signed certificate then you should complete the `imap_conn_options` and/or `smtp_conn_options` configuration options in your Roundcube config. Both options work in the same way.
+
+```
+$config['smtp_conn_options'] = array(
+  'ssl' => array(
+    'verify_peer'  => true,
+    'verify_depth' => 3,
+    'cafile'       => '/etc/openssl/certs/ca.crt',
+  ),
+);
+```
+More details on these settings can be found in the [PHP manual](https://php.net/manual/en/context.ssl.php)
+
+Setting `verify_peer` to `false` will disable certificate verification. Alternatively you can use `cafile` to define location of Certificate Authority file on local file system which should be used to authenticate your server certificate. The PHP user must be able to read this file.
