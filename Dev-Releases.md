@@ -84,7 +84,7 @@ The release tarballs are usually signed with GPG to provide a way for consumers 
 verify their authencity. The process is to create a detacted ascii-armored signature
 of the .tar.gz files. The Makefile already has a target for this action:
 ```
-make [GPGKEY=r41C4F7D5] sign
+make [GPGKEY=41C4F7D5] sign
 ```
 Also verify the signatures before publishing them:
 ```
