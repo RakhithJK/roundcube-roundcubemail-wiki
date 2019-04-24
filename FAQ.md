@@ -28,6 +28,10 @@ The plugin is already shipped with the Roundcube packages but not enabled by def
 
 > If you don't understand the above instructions, please contact your email hosting provider who runs your Roundcube webmail and ask them to enable the password plugin.
 
+## Importing Contacts from CSV
+
+Roundcube allows importing contacts either from a [VCard](https://en.wikipedia.org/wiki/VCard) file or by uploading a [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) file. When using the CSV file format, it's important to have a header line with column titles that can be mapped to contact properties. The column titles supported by Roundcube are [listed here](https://github.com/roundcube/roundcubemail/blob/master/program/localization/en_US/csv2vcard.inc) (use the part after the = without the quotes).
+
 
 ## "server certificate verification failed" on Composer install
 
