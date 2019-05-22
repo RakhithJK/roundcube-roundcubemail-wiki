@@ -28,16 +28,14 @@
    * Net_Sieve 1.4.0 or newer (for managesieve plugin)
    * Crypt_GPG 1.6.1 or newer (for enigma plugin)
    * Net_LDAP2 2.2.0 or newer (for LDAP address books)
-   * [kolab/Net_LDAP3](https://git.kolab.org/diffusion/PNL/php-net_ldap.git) dev-master (for LDAP address books)
+   * [kolab/Net_LDAP3](https://git.kolab.org/diffusion/PNL/php-net_ldap.git) 1.0.6 or newer (for LDAP address books)
  * php.ini options:
     * error_reporting E_ALL & ~E_NOTICE
-    * memory_limit > 16MB (increase as suitable to support large attachments)
-    * file_uploads enabled (for attachment upload features)
+    * memory_limit > 16MB (increase as suitable to support big mailboxes)
+    * file_uploads enabled
     * session.auto_start disabled
     * suhosin.session.encrypt disabled
     * mbstring.func_overload disabled
-    * magic_quotes_runtime disabled
-    * magic_quotes_sybase disabled
  * If using MySQL or PostgreSQL, a database server and database user with permission to create tables
  * An IMAP server which supports IMAP 4 rev 1
  * A SMTP server
