@@ -2,16 +2,16 @@
 
 ## RELEASE 1.3.9
 
-- Fix TinyMCE download location(s) (#6694)
-- Fix bug where a message/rfc822 part without a filename wasn't listed on the attachments list (#6494)
-- Fix handling of empty entries in vCard import (#6564)
-- Fix bug in parsing some IMAP command responses that include unsolicited replies (#6577)
-- Fix PHP 7.2 compatibility in debug_logger plugin (#6586)
-- Fix so ANY record is not used for email domain validation, use A, MX, CNAME, AAAA instead (#6581)
-- Fix so mime_content_type check in Installer uses files that should always be available (i.e. from program/resources) (#6599)
-- Fix missing CSRF token on a link to download too-big message part (#6621)
-- Fix bug when aborting dragging with ESC key didn't stop the move action (#6623)
-- Fix bug where next row wasn't selected after deleting a collapsed thread (#6655)
+- Fix TinyMCE download location(s) ([#6694](/roundcube/roundcubemail/issues/6694))
+- Fix bug where a message/rfc822 part without a filename wasn't listed on the attachments list ([#6494](/roundcube/roundcubemail/issues/6494))
+- Fix handling of empty entries in vCard import ([#6564](/roundcube/roundcubemail/issues/6564))
+- Fix bug in parsing some IMAP command responses that include unsolicited replies ([#6577](/roundcube/roundcubemail/issues/6577))
+- Fix PHP 7.2 compatibility in debug_logger plugin ([#6586](/roundcube/roundcubemail/issues/6586))
+- Fix so ANY record is not used for email domain validation, use A, MX, CNAME, AAAA instead ([#6581](/roundcube/roundcubemail/issues/6581))
+- Fix so mime_content_type check in Installer uses files that should always be available (i.e. from program/resources) ([#6599](/roundcube/roundcubemail/issues/6599))
+- Fix missing CSRF token on a link to download too-big message part ([#6621](/roundcube/roundcubemail/issues/6621))
+- Fix bug when aborting dragging with ESC key didn't stop the move action ([#6623](/roundcube/roundcubemail/issues/6623))
+- Fix bug where next row wasn't selected after deleting a collapsed thread ([#6655](/roundcube/roundcubemail/issues/6655))
 
 ## RELEASE 1.3.8
 
