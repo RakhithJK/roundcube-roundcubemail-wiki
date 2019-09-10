@@ -63,7 +63,11 @@ If you are using MySQL, be sure to flush the users privileges when you add a new
 ```
 FLUSH PRIVILEGES;
 ```
-Note that preconfigured database tables are included in the SQL folder. Import or restore your version or you may get a 500 Error.
+Note that preconfigured database tables are included in the SQL folder. Import or restore your version or you may get a 500 Error.  
+With MySQL you can import the initial tables with the following command:
+```
+mysql roundcubemail < SQL/mysql.initial.sql
+```
 
 ### PHP Configuration
 
