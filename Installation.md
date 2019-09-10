@@ -52,7 +52,7 @@ So once you decide, create a database with any name you want and grant privilege
 
 With MySQL you can set up the database by issuing the following commands:
 ```
-CREATE DATABASE roundcubemail;
+CREATE DATABASE roundcubemail CHARACTER SET utf8 COLLATE utf8_general_ci;
 GRANT ALL PRIVILEGES ON roundcubemail.* TO username@localhost IDENTIFIED BY 'password';
 ```
 (of course you have to replace the database, username and password accordingly)
