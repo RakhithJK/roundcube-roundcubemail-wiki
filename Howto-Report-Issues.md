@@ -27,13 +27,7 @@ Mailserver issues are not the only thing to keep in mind - PHP updates are there
 
 #### How to enable them?
 
-Roundcube has a configuration option which logs all errors to a log file located in `<webmail>/logs/` (assuming `<webmail>` is the directory of your Roundcube install).
-
-The debug_level in `config/config.inc.php` should look like this (1 = logging):
-
-    $config['debug_level'] = 1;
-
-Chances are good that there is a more detailed explanation of what went wrong in the `errors` log file inside the above mentioned logs directory. If you see a blank screen, that indicates a PHP fatal error. Check the web server's default error log for details.
+Roundcube logs all errors to a log file located in `<webmail>/logs/` (assuming `<webmail>` is the directory of your Roundcube install) unless configured otherwise.
 
 #### Enable debug logging
 
