@@ -3,7 +3,7 @@
 Roundcube webmail has over 200 configuration options that allow you to customize it according to your needs and taste and to perfectly interact with your email server infrastructure.
 After [[Installation]] local configuration files have to be created and adjusted accordingly.
 
-Starting with Roundcube version 1.0 (current git master), there's one single config file (`config/config.inc.php`) which only contains the configuration settings that differ from the defaults.
+Starting with Roundcube version 1.0, there's one single config file (`config/config.inc.php`) which only contains the configuration settings that differ from the defaults.
 Older version have their configuration split in two files (`config/main.inc.php` and `db.inc.php`) which together contain all configuration parameters.
 
 Configuration files are pure PHP files and therefore strictly have to respect the PHP syntax. If you see a blank page you likely have a syntax error on your config file(s). Check the web server's error logs to find out why and where.
@@ -95,7 +95,7 @@ For sending emails, Roundcube uses the SMTP protocol to submit a composed messag
 
 `'smtp_server'`
 
-The SMTP server for outgoing messages. To use SSL/TLS connection, enter the hostname with prefix `ssl://` or `tls://`.  
+The SMTP server for outgoing messages. To use Implicit TLS, enter the hostname with prefix `ssl://`. To use STARTTLS, use prefix `tls://`.  
 The host name can contain placeholders which will be replaced as follows:
 
   %h - user's IMAP hostname  
