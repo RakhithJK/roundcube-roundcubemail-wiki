@@ -110,8 +110,6 @@ For example %n = mail.domain.tld, %t = domain.tld
 $config['smtp_server'] = 'tls://%h';
 ```
 
-If this option is left blank, the PHP mail() function is used to send emails. We don't recommend this because mail() suffers of some limitations and doesn't restrict sending to authenticated users only.
-
 `'smtp_user'`
 
 SMTP username (if the outgoing email server requires authentication). \\
