@@ -14,6 +14,16 @@ The plugin is already shipped with the Roundcube packages but not enabled by def
    1. Copy the plugin config file `plugins/zipdownload/config.inc.php.dist` into `config/zipdownload.inc.php`
    2. Edit the copied file and set `$config['zipdownload_selection'] = true;`
 
+## How to add a logo to my signatur
+
+Edit your sender identity as follows:
+
+1. Open `Settings > Identities` and select an entry from the list
+2. In the section `Signature` check the `HTML signature` box
+3. Enter your signature text and insert an image using the image icon in the editor toolbar
+4. For `Source` either enter a URL to the desired image or upload an image file via the `Add image` button
+5. Save the sender identity
+
 ## There's no option to change my password
 
 Password changing is highly dependent on the email server used behind Roundcube. Roundcube itself doesn't store passwords but authenticates at the email server upon each login. Therefore, Roundcube doesn't provide that function with the default setup. It does, however, provide a plugin with a variety of drivers for commonly used email storage systems.
