@@ -14,7 +14,7 @@ The plugin is already shipped with the Roundcube packages but not enabled by def
    1. Copy the plugin config file `plugins/zipdownload/config.inc.php.dist` into `config/zipdownload.inc.php`
    2. Edit the copied file and set `$config['zipdownload_selection'] = true;`
 
-## How to add a logo to my signatur
+## How to add a logo to my signature
 
 Edit your sender identity as follows:
 
