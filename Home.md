@@ -17,6 +17,7 @@ This wiki and tracker site is the base of the ongoing development of Roundcube W
 - [[Online Help]]
 - Plugins Help
   - [[managesieve|Plugin-managesieve]]
+  - [[password|Plugin-password]]
 
 ## Development
 
