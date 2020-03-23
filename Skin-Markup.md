@@ -130,6 +130,8 @@ _Examples:_
     <roundcube:object name="messageContentFrame" id="messagecontframe" width="100%" height="100%" src="/watermark.html" />
     <roundcube:object name="messageCountDisplay" style="padding:0.5em; float:right" />
 
+(since 1.5)
+
 Note: To use dynamic values for _object-specific attributes_ the attribute name can be proceeded by a colon (:).
 
 _Examples:_
