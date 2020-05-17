@@ -21,7 +21,7 @@ To disable a plugin, just remove it from the list.
 
 ### Plugin Repository
 
-The official plugin repository lists plugins written by community members and they can be installed and updated from there using [Composer](http://getcomposer.org). Visit [plugins.roundcube.net](http://plugins.roundcube.net) and read the instructions how to install or publish plugins in the future.
+The official plugin repository lists plugins written by community members and they can be installed and updated from there using [Composer](http://getcomposer.org). Visit [plugins.roundcube.net](https://plugins.roundcube.net) and read the instructions how to install or publish plugins.
 
 ## How to Write a Plugin
 
@@ -290,6 +290,6 @@ We strongly encourage plugin developers to maintain the code in a git or svn rep
 
 ### Plugin Repository
 
-The Roundcube Plugin repository platform is built with Packagist, a Composer component repository which we slightly modified to manage Roundcube plugins. Using Composer, plugins can be installed and updated from the repository. As a plugin developer you can publish your plugin on that platform and by using git or svn repositories, the latest version you check in there will automatically find its way to the repository and finally to the users.
+Roundcube Plugin are published to [packagist.org](https://packagist.org) which is the default repository for PHP packages. Using [Composer](https://getcomposer.org/), plugins can be installed and updated from the repository. As a plugin developer you can publish your plugin on that platform and by using git or svn repositories, the latest version you check in there will automatically find its way to the repository and finally to the users.
 
-Visit [plugins.roundcube.net](http://plugins.roundcube.net) and read the instructions how to publish plugins there.
+Visit [plugins.roundcube.net](https://plugins.roundcube.net) and read the instructions how to publish plugins there.
