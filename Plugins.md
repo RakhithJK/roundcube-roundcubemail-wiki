@@ -1,6 +1,7 @@
 Roundcube Mail comes with many useful plugins, which extend its functionality. There are also many third-party plugins, which can be found at [Roundcube Plugins](https://plugins.roundcube.net/).
 
-### Default Plugins
+## Default Plugins
+
 Below is a table of the names and descriptions of the default plugins, which can be found [here](https://github.com/roundcube/roundcubemail/tree/master/plugins).
 
 | Name                       | Description                                                            |
@@ -38,6 +39,18 @@ Below is a table of the names and descriptions of the default plugins, which can
 | virtuser_file              ||
 | virtuser_query             ||
 | [zipdownload](/roundcube/roundcubemail/tree/master/plugins/zipdownload) | Download all attachments of a message or a selection of messages as Zip archive |
+
+## Activating Plugins
+
+A plugin is not loaded until you enable it by adding its directory name to the config option `plugins`, as an array element. This is done by editing your local `config/config.inc.php` file.
+
+For example, to enable plugins named `additional_message_headers` and `archive`, `config/config.inc.php` should contain this line:
+
+```php
+    $config['plugins'] = array('additional_message_headers', 'archive');
+```
+To disable a plugin, just remove it from the list.
+
 
 # Plugin Development
 To learn more about developing plugins for Roundcube, see [[Plugin API]].
