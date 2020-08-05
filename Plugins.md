@@ -23,7 +23,7 @@ Below is a table of the names and descriptions of the default plugins, which can
 | identity_select            ||
 | jqueryui                   ||
 | krb_authentication         ||
-| managesieve                | Allows to manage Sieve filters in a visual UI using the managesieve protocol |
+| [managesieve](Plugin-managesieve) | Allows to manage Sieve filters in a visual UI using the managesieve protocol |
 | [markasjunk](/roundcube/roundcubemail/tree/master/plugins/markasjunk) | Adds "mark as (not) spam" buttons to the message menu |
 | new_user_dialog            ||
 | new_user_identity          ||
