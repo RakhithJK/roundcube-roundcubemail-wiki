@@ -17,27 +17,27 @@ Below is a table of the names and descriptions of the default plugins, which can
 | example_addressbook        | Sample plugin that implements a hard-coded list of contacts            |
 | filesystem_attachments     | Adds basic, filesystem-based temporary attachment handling             |
 | help                       ||
-| hide_blockquote            ||
+| hide_blockquote            | Add possibility to hide long blocks of cited text in messages |
 | http_authentication        ||
 | identicon                  ||
 | identity_select            ||
 | jqueryui                   ||
 | krb_authentication         ||
-| managesieve                ||
-| markasjunk                 ||
+| managesieve                | Allows to manage Sieve filters in a visual UI using the managesieve protocol |
+| [markasjunk](/roundcube/roundcubemail/tree/master/plugins/markasjunk) | Adds "mark as (not) spam" buttons to the message menu |
 | new_user_dialog            ||
 | new_user_identity          ||
 | newmail_notifier           ||
-| password                   ||
+| [password](/roundcube/roundcubemail/tree/master/plugins/password) | Change user password using many via Settings using many methods (drivers) |
 | redundant_attachments      ||
 | show_additional_headers    ||
 | squirrelmail_usercopy      ||
 | subscriptions_option       ||
 | userinfo                   ||
-| vcard_attachments          ||
+| vcard_attachments          | Detects VCard attachments and show a button to add them to address book |
 | virtuser_file              ||
 | virtuser_query             ||
-| zipdownload                ||
+| [zipdownload](/roundcube/roundcubemail/tree/master/plugins/zipdownload) | Download all attachments of a message or a selection of messages as Zip archive |
 
 # Plugin Development
 To learn more about developing plugins for Roundcube, see [[Plugin API]].
