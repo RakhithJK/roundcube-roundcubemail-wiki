@@ -150,4 +150,4 @@ You should provide an absolute URL to a support page with a form to submit quest
 
 ### Defaults for user preferences
 
-The default values for user preferences are defined in the [config/defaults.inc.php](/roundcube/roundcubemail/blob/master/config/defaults.inc.php#L1002) file. Each option is described with comments right in that file.
+The default values for user preferences are defined in the [config/defaults.inc.php](/roundcube/roundcubemail/blob/master/config/defaults.inc.php) file. Each option is described with comments right in that file.
