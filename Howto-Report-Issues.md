@@ -4,6 +4,10 @@ So you think you found an issue? - First off, we really appreciate all feedback 
 
 ***We know this is probably a pain to read, but please do it so we can straighten out all issues sooner than later.***
 
+### Security issues
+
+Please read our [Security Policy](/roundcube/roundcubemail/security/policy) if you want to report a security issue.
+
 ### Most current version
 
 Because development never stops and in order to ease the burden on us, we hereby ask you to test your issues always against the latest available version from [git](/roundcube/roundcubemail) or click this link directly [Latest version from master](https://github.com/roundcube/roundcubemail/archive/master.zip)
