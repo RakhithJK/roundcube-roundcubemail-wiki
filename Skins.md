@@ -26,6 +26,25 @@ This is the least structure a skin should provide (for list of templates see exi
       about.html [...]
 ```
 
+### Skinning plugins
+
+As of Roundcube version 1.5.0. Some Roundcube plugins require additional skin information in order to display correctly. This is located in the `skins/` subfolder of each plugin. To make supporting plugins easier for skin developers a secondary file location is supported inside the skin folder. Inside your skin folder create a subfolder called `plugins` and then subfolders for each plugin you wish to support:
+
+```
+  skins/<skinname>/
+    plugins/
+      archive/
+      markasjunk/
+          markasjunk.css
+      managesieve/
+          managesieve.css
+          templates/
+              managesieve.html [...]
+      <pluginname>/
+          templates/
+```
+The contents of each plugin subfolder should match the contents of a skin subfolder in the original plugin folder. The original plugin folder takes priority over this location.
+
 ## meta.json
 
 
