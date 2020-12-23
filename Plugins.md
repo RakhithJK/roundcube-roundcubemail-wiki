@@ -28,7 +28,7 @@ Below is a table of the names and descriptions of the default plugins, which can
 | [markasjunk](/roundcube/roundcubemail/tree/master/plugins/markasjunk) | Adds "mark as (not) spam" buttons to the message menu |
 | new_user_dialog            ||
 | new_user_identity          ||
-| newmail_notifier           ||
+| newmail_notifier           | Plays a sound or shows desktop notifications when new messages arrive |
 | [password](/roundcube/roundcubemail/tree/master/plugins/password) | Change user password using many via Settings using many methods (drivers) |
 | redundant_attachments      ||
 | show_additional_headers    ||
