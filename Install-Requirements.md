@@ -1,11 +1,11 @@
 ## Server Requirements
 
-(for stable version 1.3)
+(for stable versions 1.3.x and 1.4.x)
 
  * Apache, Lighttpd, Cherokee, Hiawatha or Nginx web server
  * Directory on the Web server allowed to run scripts
- * If using Apache, .htaccess support or configuration to override DirectoryIndex
- * PHP version 5.4.1 or greater with
+ * If using Apache, `.htaccess` support or configuration to override `DirectoryIndex`
+ * PHP version 5.4.1 or greater (and < 8.0 **) with
     * PCRE (Perl-Compatible Regular Expressions)
     * DOM
     * JSON
@@ -40,6 +40,7 @@
  * An IMAP server which supports IMAP 4 rev 1
  * A SMTP server
 
+> ** PHP 8 will be supported with Roundcube 1.5)
 
 ## Supported browsers (version 1.3.x)
 
