@@ -40,7 +40,7 @@
  * An IMAP server which supports IMAP 4 rev 1
  * A SMTP server
 
-> ** PHP 8 will be supported with Roundcube 1.5)
+> ** PHP 8 will be supported with Roundcube 1.5
 
 ## Supported browsers (version 1.3.x)
 
