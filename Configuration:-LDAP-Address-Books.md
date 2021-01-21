@@ -226,16 +226,16 @@ To use Microsoft AD (Active Directory) as Roundcube's Address book, add the sect
 
 seen below to your `config.inc.php`.
 
-MyAdLdap  : This is an arbitrary name.
-Big Company, Inc : This is your addressbook name
-masterserver.company.net : Active Directory server
-CN=users,DC=company,DC=net : The Base DN for the users
-ldap@company.net  : Active Directory user, with Read-Only capabilities over the whole directory
-ADsecretpassword   : ldap@company.net 's Active Directory Password
+- MyAdLdap: This is an arbitrary name.
+- Big Company, Inc: This is your addressbook name
+- masterserver.company.net: Active Directory server
+- CN=users,DC=company,DC=net: The Base DN for the users
+- ldap@company.net: Active Directory user, with Read-Only capabilities over the whole directory
+- ADsecretpassword: ldap@company.net 's Active Directory Password
 
 ```php
 $config['ldap_public'] = array(
-    'MyAdLdap' =>array (
+    'MyAdLdap' => array (
         'name' => 'Big Company, Inc',
         'hosts' => array('masterserver.company.net'),
         'sizelimit' => 6000,
@@ -251,19 +251,24 @@ $config['ldap_public'] = array(
            'mail',
            'cn',
         ),
-        'name_field' => 'cn',
-        'email_field' => 'mail',
-        'surname_field' => 'sn',
-        'firstname_field' => 'givenName',
+        'fieldmap' => array(
+            'name' => 'cn',
+            'email' => 'mail',
+            'surname' => 'sn',
+            'firstname' => 'givenName',
+        ),
         'sort' => 'sn',
-        'scope' => 'list',
+        'scope' => 'list', # or 'sub'
         'filter' => '(&(mail=*)(|(&(objectClass=user)(!(objectClass=computer)))(objectClass=group)))',
         'global_search' => true,
-        'fuzzy_search' => true
+        'fuzzy_search' => true,
+        'vlv' => false,
     ),
 );
 ```
 
 ## Important
 
-When connecting to AD, you may need to use port 3268. Then again, not all LDAP fields are available in port 3268. Use whatever works. http://technet.microsoft.com/en-us/library/cc978012.aspx
+When connecting to AD, you may need to use port 3268. Then again, not all LDAP fields are available in port 3268. When connecting via LDAPS, use `ldaps://masterserver.company.net` as a host, `636` as a port and `use_tls` set to `false`. Use whatever works. http://technet.microsoft.com/en-us/library/cc978012.aspx
+
+
