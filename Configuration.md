@@ -17,11 +17,24 @@ The following sections will explain the most common settings one need to make be
 
 `'db_dsnw'`
 
-Database connection string for read+write operations
+Database connection string for read+write operations.
+
 Format: `db_provider://user:password@host/database`
-Currently supported db_providers: mysql, pgsql, sqlite, mssql or sqlsrv
-For examples see [PEAR MDB2 Docs](http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php)
-NOTE: for SQLite use absolute path: `sqlite:////full/path/to/sqlite.db?mode=0646`
+
+Currently supported connection providers:
+- `mysql`
+- `pgsql`
+- `sqlite` (an absolute path definition is required: `sqlite:////full/path/to/sqlite.db?mode=0646`)
+- `mssql`
+- `sqlsrv`
+
+You can save a lot of transmission overhead by using unix socket. This only applies to setups where the database is on the same host as roundcube (which is quite often the case). Here is a configuration example for PostgreSQL:
+
+    pgsql://username:password@unix(/run/postgresql)/my_database
+
+Note that you have to omit the actual name of the socket file (`.s.PGSQL.5432`)!
+
+For more examples see [PEAR MDB2 Docs](http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php)
 
 `'des_key'`
 
