@@ -37,3 +37,23 @@
 # Version 0.6
 * Initial release: 29 September 2011
 * PHP support: &gt;=5.2 &lt;=5.3
+
+# Version 0.5
+* Initial release: 12 January 2011
+* PHP support: &gt;=5.2 &lt;=5.3
+
+# Version 0.4
+* Initial release: 07 August 2010
+* PHP support: &gt;=5.2 &lt;=5.3
+
+# Version 0.3
+* Initial release: 04 September 2009
+* PHP support: &gt;=5.2 &lt;=5.3
+
+# Version 0.2
+* Initial release: 30 December 2008
+* PHP support: 5.2
+
+# Version 0.1
+* Initial release: 05 March 2008
+* PHP support: 5.2
