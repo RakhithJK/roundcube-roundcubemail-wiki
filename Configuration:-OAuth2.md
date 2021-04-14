@@ -16,7 +16,7 @@ All available config options are listed in the "OAuth" section of the `config/de
 
 There are the mandatory config options required to enable OAuth in Roundcube:
 
-* `oauth_provider`: Enable OAuth2 by defining a provider. Use 'gmail', 'outlook' ore 'generic'.
+* `oauth_provider`: Enable OAuth2 by defining a provider. Use 'gmail', 'outlook' or 'generic'.
 * `oauth_provider_name`: Provider name to be displayed on the login button
 * `oauth_client_id`: OAuth client ID for your Roundcube installation
 * `oauth_client_secret`: OAuth client secret
