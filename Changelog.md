@@ -1,1 +1,1 @@
-this is test
+See the versioned [Changelog file](https://github.com/roundcube/roundcubemail/blob/master/CHANGELOG).
