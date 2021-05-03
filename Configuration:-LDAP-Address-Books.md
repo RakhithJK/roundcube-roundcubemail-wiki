@@ -167,6 +167,12 @@ If you see at least this 4 entries, your LDAP addressbook server is now ready to
 
 ## Configuring Roundcube
 
+### Prerequisites
+
+In order to enable Roundcube to connect to LDAP, make sure the `kolab/net_ldap3` dependency is installed. This is already included in the "complete" packages of Roundcube and otherwise needs to be added from the "suggest" to the "require" section of your [composer.json](https://github.com/roundcube/roundcubemail/blob/395bac5854b663796a81277c8cc997fc877f0d78/composer.json-dist#L28) file. Then run composer install to pull in the required modules.
+
+### Configure LDAP directories
+
 The following example configurations (only the important fields are shown!) fit public and private LDAP address books working with the described LDAP server setup:
 
 ```php
