@@ -242,6 +242,41 @@ _Return values:_
   * language
 
 
+### oauth_login
+
+(since 1.5-rc)
+
+Hook triggered after successful authentication via OAuth.
+It provides all data exchanged with the OAuth service including access and refresh tokens as well as identity information.
+
+_Arguments:_
+  * access_token: The access token obtained from the OAuth service
+  * token_type: The token type (e.g. Bearer)
+  * refresh_token: The refresh token (if supplied)
+  * expires: Unix timestamp when the access token will expire
+  * username: The username of the authenticated session
+  * identity: Hash array with identity information of the authenticated user
+
+_Return values:_
+  none.
+
+
+### oauth_refresh_token
+
+(since 1.5-rc)
+
+Hook triggered after the OAuth access token was refreshed.
+It provides all data exchanged with the OAuth service including access and refresh tokens as well as identity information.
+
+_Arguments:_
+  * access_token: The access token obtained from the OAuth service
+  * token_type: The token type (e.g. Bearer)
+  * expires: Unix timestamp when the access token will expire
+
+_Return values:_
+  none.
+
+
 ----
 
 ## Task "logout"
