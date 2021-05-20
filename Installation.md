@@ -1,4 +1,4 @@
-# How to install Roundcubedzz
+# How to install Roundcube
 
 ## Introduction
 
