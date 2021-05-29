@@ -1,1 +1,1 @@
-See the versioned [Changelog file](https://github.com/roundcube/roundcubemail/blob/master/CHANGELOG).
+See [the versioned CHANGELOG.md file](https://github.com/roundcube/roundcubemail/blob/master/CHANGELOG.md).
