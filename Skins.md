@@ -18,6 +18,7 @@ This is the least structure a skin should provide (for list of templates see exi
 
 ```
   skins/<skinname>/
+    composer.json
     meta.json
     thumbnail.png
     styles.css
@@ -223,3 +224,21 @@ This is a generic template which is used to render the contents of a plugin. Mos
 ### error.html
 
 Last but not least this template is used to display notifications about fatal errors which prevent the system from working correctly.
+
+## Publishing Skins
+
+We strongly encourage skin developers to maintain the code in a git or svn repository, best done by creating separate repositories for every single skin. There are many platforms which offer such repositories for free (e.g. [Github](http://github.com), [Gitorious](http://gitorious.org) or [Sourceforge](http://sourceforge.net)).
+
+Starting with Roundcube 1.5.0 and version 0.3.0 of the [Roundcube plugin-installer](https://github.com/roundcube/plugin-installer) skins can be distributed via [Composer](https://getcomposer.org/), publish your skin to [packagist.org](https://packagist.org) which is the default repository for PHP packages. As a skin developer you can publish your skin on that platform and by using git or svn repositories, the latest version you check in there will automatically find its way to the repository and finally to the users.
+
+### sample composer.json for skins
+```
+{
+    "name": "<your-vendor-name>/<skin-name>",
+    "type": "roundcube-skin",
+    "license": "GPL-3.0+",
+    "require": {
+        "roundcube/plugin-installer": ">=0.3.0"
+    }
+}
+```
