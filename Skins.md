@@ -140,6 +140,24 @@ When extending a skin if you wish to unset a meta or link tag defined in the par
 }
 ```
 
+### Extending skins Elastic
+
+To create a skin that builds on elastic, simply name the base skin with the label `extends` in the meta.json file of your skin:
+
+```
+{
+  "extends": "elastic",
+  ...
+}
+```
+
+If you for example just want to add an additional CSS file which overrides certain styles of the Elastic theme you can create/override the file templates/includes/layout.html in your skin, adding another stylesheet. Then the custom skin file can even include the equivalent from the basic theme by specifying the `skinPath` attribute:
+
+```
+<roundcube:include file="includes/layout.html" skinPath="skins/elastic" />
+<link rel="stylesheet" type="text/css" href="/customstyles.css" />
+```
+
 ## The template engine
 
 All templates are pure XHTML files and contain special tags of the form `<roundcube: .../>` which are parsed and replaced with the according content. Using these special tags you can also include other template files and make conditional blocks. The syntax and a detailed list of available tags is described on the [[Skin Markup]] page.
