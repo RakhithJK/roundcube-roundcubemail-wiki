@@ -11,6 +11,7 @@ This wiki and tracker site is the base of the ongoing development of Roundcube W
   - [[LDAP Address Books|Configuration:-LDAP-Address-Books]]
   - [[Load-balanced Setup|Configuration:-Load-balanced-Setup]]
   - [[Multi-Domain Setup|Configuration:-Multi-Domain-Setup]]
+  - [[OAuth2 Setup|Configuration:-OAuth2]]
 - [[Build from source]]
 - [[Upgrade]]
 - [[FAQ]]
