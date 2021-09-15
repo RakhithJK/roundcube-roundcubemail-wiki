@@ -27,6 +27,8 @@ There are the mandatory config options required to enable OAuth in Roundcube:
 
 For Roundcube it's mandatory to receive the email address (or username) of the connected user. This is being used to identify returning users and also to authenticated at the IMAP and SMTP servers. Most OAuth providers will return a so called [ID Token](https://www.oauth.com/oauth2-servers/openid-connect/id-tokens/) along with the access token. That ID token contains information about the connected user. This can be enforced by requesting a specific scope, in most cases `openid`. If no such ID token is returned in the first place, Roundcube will connect to the configured `oauth_identity_uri` in order to query the connected user's identity. Use the `oauth_identity_fields` option to tell Roundcube which field of the identity information holds can canonical username.
 
+Some OAuth servers (like Outlook) needs a `nonce` parameter for security. This parameter can be passed using the `oauth_auth_parameters` config option. For instance: `$config['oauth_auth_parameters'] = ['nonce' => mt_rand()];`
+
 ### Setting IMAP and SMTP hosts
 
 With OAuth2 enabled, it's important to set fixed values for email server connections servers.
