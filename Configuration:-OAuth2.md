@@ -7,7 +7,7 @@ Connecting Roundcube via OAuth2 is now possible and requires a few configuration
 1. Registered Client App (Roundcube) with your OAuth2 provider service
 2. XOAUTH support for both IMAP and SMTP servers Roundcube connects to
 
-First of all, your Roundcube installation needs to be registered as a client application with your OAuth2 provider. This will give you the necessary credentials (client-id and secret) to fill in the Roundcube config. It's also necessary to register the redirect URL to Roundcube at the provider. Use `https://<your-roundcube-url>/index.php/login/oauth` for this.
+First of all, your Roundcube installation needs to be registered as a client application with your OAuth2 provider. This will give you the necessary credentials (client-id and secret) to fill in the Roundcube config. It's also necessary to register the redirect URL to Roundcube at the provider. Use `https://<your-roundcube-url>/index.php/login/oauth` for this. The token endpoint must support the [client_secret_post](https://datatracker.ietf.org/doc/html/rfc7591#section-2) authentication method.
 
 
 ## Roundcube Config
