@@ -164,3 +164,36 @@ You should provide an absolute URL to a support page with a form to submit quest
 ### Defaults for user preferences
 
 The default values for user preferences are defined in the [config/defaults.inc.php](/roundcube/roundcubemail/blob/master/config/defaults.inc.php) file. Each option is described with comments right in that file.
+
+### Spell checking
+
+Roundcube has a spell checking feature built into the message composer. Since version 1.5.0 it needs to be enabled explicitly with
+
+`'enable_spellcheck'`
+
+In previous versions it was enabled by default using the remote spell checking API at http://spell.roundcube.net which is a hosted service provided by Roundcube.
+
+Other spell checking backends can be configured. We recommend to use [pspell](https://www.php.net/manual/en/book.pspell.php) which operates on the local host using the aspell library.
+
+`'spellcheck_engine'`
+
+Set the spell checking engine. Possible values are:
+* 'googie': the default (also used for connecting to Nox Spell Server, see 'spellcheck_uri' setting)
+* 'pspell': requires the PHP pspell module and aspell installed
+* 'enchant': requires the PHP Enchant module
+* 'atd': install your own [After the Deadline](http://www.afterthedeadline.com) server
+
+`'spellcheck_uri'`
+
+For locally installed [Googie Spell Check XML Service](https://github.com/roundcube/google-spell-pspell), Nox Spell Server or After the Deadline services specify the URI to call it.
+
+`'spellcheck_languages'`
+
+These languages can be selected for spell checking.  
+Configure as a PHP style hash array: `['en' => 'English', 'de' => 'Deutsch']`  
+Leave empty for default set of available language.
+
+`'spellcheck_dictionary'`
+
+Enables spellchecker exceptions dictionary.  
+Setting it to 'shared' will make the dictionary shared by all users.
