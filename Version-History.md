@@ -1,5 +1,9 @@
-# Version 1.5
+# Version 1.6
 * Initial release: _TBC_
+* PHP support: &gt;=7.3 &lt;=8.1
+
+# Version 1.5
+* Initial release: 18 October 2021
 * PHP support: &gt;=5.5 &lt;=8.0
 
 # Version 1.4
