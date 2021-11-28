@@ -1207,6 +1207,7 @@ Hooks that appear to be missing documentation. Obtained by searching for all cal
  * folder_rename
  * folder_update
  * identity_select
+ * loginform_content
  * responses_list
  * save_hook
  * saved_search_create
