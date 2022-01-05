@@ -164,7 +164,7 @@ Install mhp5-intl (as recommended in the installation instructions):
 # apt-get install php5-intl
 ```
 
-Set default time zone in php.ini (examples: `UTC`, `Europe/Zurich`, or see the [PHP Manual](http://php.net/manual/en/timezones.php) for more):
+Set default time zone in php.ini (examples: `UTC`, `Europe/Paris`, or see the [PHP Manual](http://php.net/manual/en/timezones.php) for more):
 ```
 sed -i -e "s/^;date\.timezone =.*$/date\.timezone = 'UTC'/" /etc/php5/apache2/php.ini
 ```
