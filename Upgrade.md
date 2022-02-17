@@ -38,6 +38,8 @@ bin/installto.sh <your-existing-roundcube-directory>
 Follow the instructions you'll see in the shell. The script first copies all updated files to the target directory and then runs the update script that will update/migrate your local configuration files and update the database schema if necessary.
 
 Instead of using that script you can execute the steps manually. Read the _Updating manually_ section of the [UPGRADING](https://github.com/roundcube/roundcubemail/blob/master/UPGRADING) file from the release package.
+
+If your web server's document root directory points to `public_html`, then the `/installer/` will not be available. For the database upgrade, let it point to the main roundcube directory.
  
 
 ## Via FTP + Installer
