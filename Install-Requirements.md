@@ -1,6 +1,6 @@
 ## Server Requirements
 
-(for stable versions 1.3.x and 1.4.x)
+(for stable versions 1.3.x, 1.4.x and 1.5.x)
 
  * Apache, Lighttpd, Cherokee, Hiawatha or Nginx web server
  * Directory on the Web server allowed to run scripts
@@ -15,6 +15,7 @@
     * Session support
     * Socket support
     * PHP Data Objects (PDO) with driver for either MySQL, PostgreSQL, SQL Server or SQLite
+    * Internationalisation support (since Roundcube 1.5-rc)
     * Iconv (optional)
     * FileInfo (optional)
     * Zip (optional)
