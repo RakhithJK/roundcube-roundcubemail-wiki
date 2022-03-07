@@ -15,7 +15,7 @@
     * Session support
     * Socket support
     * PHP Data Objects (PDO) with driver for either MySQL, PostgreSQL, SQL Server or SQLite
-    * Internationalisation support (since Roundcube 1.5-rc)
+    * Internationalisation support (since Roundcube 1.5-beta)
     * Iconv (optional)
     * FileInfo (optional)
     * Zip (optional)
