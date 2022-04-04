@@ -1,1 +1,1 @@
-**_(C) Roundcube_**
+**_(C) 2022 Roundcube_** (BTW, anyone Can edit this)
