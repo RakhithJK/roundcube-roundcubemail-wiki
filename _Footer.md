@@ -1,1 +1,1 @@
-**_footer text_**
+**_(C) Roundcube_**
