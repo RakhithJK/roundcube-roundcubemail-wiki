@@ -2,4 +2,4 @@
 
 We stand with Ukraine! 
 
-Russian warship Idi Nahui!
+Russian warship Idi Na Hui!
