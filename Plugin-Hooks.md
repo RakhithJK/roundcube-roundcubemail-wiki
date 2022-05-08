@@ -372,7 +372,7 @@ _Return values:_
 
 ### message_read
 
-Triggered when a message is loaded and its SEEN flag is set.
+Triggered when a message is loaded and its SEEN flag is not yet set.
 The `message` argument will give you access to all the message headers and its structure.
 
 _Arguments:_
