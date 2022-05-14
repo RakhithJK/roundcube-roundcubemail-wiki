@@ -12,7 +12,7 @@ First of all, your Roundcube installation needs to be registered as a client app
 
 ## Roundcube Config
 
-All available config options are listed in the "OAuth" section of the `config/defaults.inc.php` file inside your Roundcube installation along with examples for Gmail and Outlook.com. Copy them to your `config.inc.php` file and adapt them according to your setup. Please do not exit the `defaults.inc.php` as this will be replaced on your next update.
+All available config options are listed in the "OAuth" section of the `config/defaults.inc.php` file inside your Roundcube installation along with examples for Gmail and Outlook.com. Copy them to your `config.inc.php` file and adapt them according to your setup. Please do not edit the `defaults.inc.php` as this will be replaced on your next update.
 
 There are the mandatory config options required to enable OAuth in Roundcube:
 
@@ -25,7 +25,7 @@ There are the mandatory config options required to enable OAuth in Roundcube:
 * `oauth_identity_uri`: Endpoint to query user identity if not provided in auth response
 * `oauth_scope`: OAuth scopes to request (space-separated string)
 
-For Roundcube it's mandatory to receive the email address (or username) of the connected user. This is being used to identify returning users and also to authenticated at the IMAP and SMTP servers. Most OAuth providers will return a so called [ID Token](https://www.oauth.com/oauth2-servers/openid-connect/id-tokens/) along with the access token. That ID token contains information about the connected user. This can be enforced by requesting a specific scope, in most cases `openid`. If no such ID token is returned in the first place, Roundcube will connect to the configured `oauth_identity_uri` in order to query the connected user's identity. Use the `oauth_identity_fields` option to tell Roundcube which field of the identity information holds can canonical username.
+For Roundcube it's mandatory to receive the email address (or username) of the connected user. This is used to identify returning users and also to authenticate at the IMAP and SMTP servers. Most OAuth providers will return a so called [ID Token](https://www.oauth.com/oauth2-servers/openid-connect/id-tokens/) along with the access token. That ID token contains information about the connected user. This can be enforced by requesting a specific scope, in most cases `openid`. If no such ID token is returned in the first place, Roundcube will connect to the configured `oauth_identity_uri` in order to query the connected user's identity. Use the `oauth_identity_fields` option to tell Roundcube which field of the identity information holds can canonical username.
 
 Some OAuth servers (like Outlook) needs a `nonce` parameter for security. This parameter can be passed using the `oauth_auth_parameters` config option. For instance: `$config['oauth_auth_parameters'] = ['nonce' => mt_rand()];`
 
