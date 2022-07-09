@@ -1,5 +1,5 @@
 # Version 1.6
-* Initial release: _TBC_
+* Initial release: _TBC_ (soon: https://github.com/roundcube/roundcubemail/releases/tag/1.6-rc)
 * PHP support: &gt;=7.3 &lt;=8.1
 
 # Version 1.5
