@@ -58,17 +58,17 @@ To use SSL/TLS connection, enter the hostname with prefix "ssl://" or "tls://"
 And if you want a drop-down list like it's explained in the comments you need something like this:
 
 ```php
-$config['default_host'] = array('mail.example.com', 'webmail.example.com', 'ssl://mail.example.com:993');
+$config['default_host'] = ['mail.example.com', 'webmail.example.com', 'ssl://mail.example.com:993'];
 ```
 
 In order to show nice labels instead of the host names in the drop-down box write it this way:
 
 ```php
-$config['default_host'] = array(
+$config['default_host'] = [
   'mail.example.com' => 'Default Server',
   'webmail.example.com' => 'Webmail Server',
   'ssl://mail.example.com:993' => 'Secure Webmail Server'
-);
+];
 ```
 
 `'login_lc'`
@@ -91,10 +91,10 @@ Automatically add this domain to user names for login. Only needed for IMAP serv
 Specify an array with `'host' => 'domain'` values to support multiple hosts (from `default_host`):
 
 ```php
-$config['username_domain'] = array(
+$config['username_domain'] = [
   'mail.example.com' => 'example.com',
   'othermail.example.com' => 'otherdomain.com',
-);
+];
 ```
 
 `'auto_create_user'`
