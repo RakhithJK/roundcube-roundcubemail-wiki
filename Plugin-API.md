@@ -45,6 +45,8 @@ Inside `fancy_emoticons.php` you create the plugin class with the name `fancy_em
 
 Roundcube defines an abstract class named `rcube_plugin` which provides basic functions and connections to the internal API. Each plugin consists of a class which extends `rcube_plugin`. The plugin API instantiates a plugin object and then calls the method `init()` which has to be implemented by the derived plugin class. This startup method is the place where a plugin registers hooks, actions and scripts that will be passed to the client.
 
+When the `init()` method is invoked Roundcube is already fully initialized. If you wanted to execute some code earlier in the process (e.g. before session initialization), use `onload()` method. This is a solution for a special use-case, most plugins should use the `init()` method. 
+
 To continue our sample plugin _Fancy Emoticons_, the plugin class could look like this:
 
 ```php
