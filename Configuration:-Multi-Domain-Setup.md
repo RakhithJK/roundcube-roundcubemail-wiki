@@ -9,7 +9,7 @@ If enabled, Roundcube will additionally load the file that matches the host name
 ```php
 <?php
 
-$config['default_host'] = '<imap-host-for-this-domain>';
+$config['imap_host'] = '<imap-host-for-this-domain>';
 $config['username_domain'] = '<the-domain-name>';
 ```
 
