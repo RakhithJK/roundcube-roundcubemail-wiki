@@ -1,1 +1,1 @@
-Roundcube.
+Roundcube
