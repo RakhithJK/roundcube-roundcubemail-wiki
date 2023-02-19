@@ -38,7 +38,7 @@ For more examples see [PEAR MDB2 Docs](http://pear.php.net/manual/en/package.dat
 
 `'des_key'`
 
-This key is used to encrypt the users IMAP password which is temporarily stored in the session database.
+This key is used to encrypt the user's IMAP password which is temporarily stored in the session database.
 For security reasons it's important that your Roundcube installation has its very own encryption key and that you *don't use the default value! *
 
 
